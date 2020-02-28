@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="gb2312"?>
+<process xmlns="http://www.livebos.com/bizlogic/process" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" attribute="4" exitOnStandardFault="false" isHorizontalLayout="false" method="T_GDSY_RWDD_M2" name="T_GDSY_RWDD_M2" object="T_GDSY_RWDD" type="0" xsi:schemaLocation="http://www.livebos.com/bizlogic/process http://www.livebos.com/bizlogic_process.xsd">
+  <describe>任务调度-月度跟踪评价发送流程</describe>
+  <variables>
+    <variable describe="V_1" messageType="" name="V_1" type="resultSet" />
+    <variable describe="V_2" messageType="" name="V_2" type="resultSet" />
+    <variable describe="V_3" instanceType="lc_GDSY_YDGZPJ" messageType="" name="V_3" type="object" />
+    <variable describe="V_4" messageType="" name="V_4" type="string" />
+  </variables>
+  <sequence id="0" name="顺序">
+    <if id="0">
+      <describe>判断</describe>
+      <conditions>
+        <condition name="发送日期判断" type="expression">
+          <arg name="expression">&lt;%@ livebos language='javascript' %&gt;&#xD;
+1==ABS_SQLVALUE("select count(1)  from (select * from (select rownum as rn, b.* from (select a.* from gdsy_data.cif_tjyr a  where a.jyrbs = 1 and substr(a.rq, 1, 6) =  substr(to_char(sysdate, 'yyyymmdd'), 1, 6) order by a.rq asc) b where rownum &lt;= (select a.csz from txtcs a where a.csdm = 'ydgzpjzxrq')) c  where c.rn = (select a.csz from txtcs a where a.csdm = 'ydgzpjzxrq')  )  d where d.rq =  substr(to_char(sysdate, 'yyyymmdd'), 1, 8)")</arg>
+        </condition>
+      </conditions>
+      <sequence id="0" name="顺序">
+        <invoke component="SQL" id="0" name="数据库组件_SQL查询" operation="query">
+          <describe>数据库组件_SQL查询</describe>
+          <arg name="TranType">sql</arg>
+          <arg name="SQL">["select *\r\n  from T_GDSY_XMSMZQ a\r\n where a.rwlx = 1 \r\n   and to_number(to_char(sysdate, 'yyyymmdd')) &gt;= a.ksrq\r\n   and to_number(to_char(sysdate, 'yyyymmdd')) &lt;= a.jsrq",[]]</arg>
+          <arg name="@retResultSet" type="output">V_1</arg>
+        </invoke>
+        <forEach collection="V_1" id="0" toVariable="V_2">
+          <describe>迭代</describe>
+          <sequence id="0" name="顺序">
+            <assign id="0">
+              <describe>赋值</describe>
+              <copy>
+                <from type="expression">var bh="";&#xD;
+var num=ABS_SQLVALUE("select count(*) from lc_gdsy_ydgzpj pj where pj.xm=? and pj.yf=(select (case when substr(to_char(sysdate, 'yyyymmdd'), 5, 2)-1 = 0 then substr(to_char(sysdate, 'yyyymmdd'), 1, 4)-1||'12' else to_number(substr(to_char(sysdate, 'yyyymmdd'), 1, 6)) -1||'' end ) as yf from dual)",[V_2.XM]);&#xD;
+if(num==1){ &#xD;
+    bh=1;&#xD;
+}else if(num&gt;1){&#xD;
+	bh=ABS_SQLVALUE("select max(pj.bh)  +1 from lc_gdsy_ydgzpj pj where pj.xm=? and pj.yf=(select (case when substr(to_char(sysdate, 'yyyymmdd'), 5, 2)-1 = 0 then substr(to_char(sysdate, 'yyyymmdd'), 1, 4)-1||'12' else to_number(substr(to_char(sysdate, 'yyyymmdd'), 1, 6)) -1||'' end ) as yf from dual)",[V_2.XM]);&#xD;
+}else{&#xD;
+ bh;&#xD;
+}&#xD;
+bh;</from>
+                <to variable="V_4" />
+              </copy>
+            </assign>
+            <invoke component="FormOperate" id="0" name="对象组件_新增" operation="insert">
+              <describe>新增对象[月度跟踪评价发起]</describe>
+              <arg name="@objectName">lc_GDSY_YDGZPJ</arg>
+              <arg flag="field" name="InstID" type="expression">-1</arg>
+              <arg flag="field" name="XM" type="expression">V_2.XM</arg>
+              <arg name="@retObject" type="output">V_3</arg>
+              <arg flag="field" name="XMJD" type="expression">"存续期管理"</arg>
+              <arg flag="field" name="XMLX" type="expression">ABS_SQLVALUE("select b.name from  t_gdsy_xmjbxx a,t_gdsy_xmfl  b where a.id = ?  and  a.xmfl = b.id",[V_2.XM])</arg>
+              <arg flag="field" name="FXR" type="expression">ABS_SQLVALUE(" select a.fxrmc from  t_gdsy_xmjbxx a where a.id = ?",[V_2.XM])</arg>
+              <arg flag="field" name="XMQXR" type="expression">V_2.QXR</arg>
+              <arg flag="field" name="ZT" type="expression">if(V_4!=""){&#xD;
+ "【"+ABS_SQLVALUE("select  khmc  from   t_gdsy_xmjbxx  a where a.id = ?",[V_2.XM])+"】月度跟踪评价"+"_"+ABS_SQLVALUE("select (case  when substr(to_char(sysdate, 'yyyymmdd'), 5, 2)-1 = 0 then substr(to_char(sysdate, 'yyyymmdd'), 1, 4)-1 else to_number(substr(to_char(sysdate, 'yyyymmdd'), 1, 4)) end ) as nf  from dual")+"年"+ABS_SQLVALUE("select (case when substr(to_char(sysdate, 'yyyymmdd'), 5, 2)-1 = 0 then 12||'' else substr((substr(to_char(sysdate, 'yyyymmdd'), 1, 6) -1)||'',5,6) end ) as yf  from dual")+"月"+"_"+V_4&#xD;
+ }else{&#xD;
+ "【"+ABS_SQLVALUE("select  khmc  from   t_gdsy_xmjbxx  a where a.id = ?",[V_2.XM])+"】月度跟踪评价"+"_"+ABS_SQLVALUE("select (case when substr(to_char(sysdate, 'yyyymmdd'), 5, 2)-1 = 0 then substr(to_char(sysdate, 'yyyymmdd'), 1, 4)-1 else to_number(substr(to_char(sysdate, 'yyyymmdd'), 1, 4)) end ) as nf  from dual")+"年"+ABS_SQLVALUE("select (case when substr(to_char(sysdate, 'yyyymmdd'), 5, 2)-1 = 0 then 12||'' else substr((substr(to_char(sysdate, 'yyyymmdd'), 1, 6) -1)||'',5,6) end ) as yf  from dual")+"月"&#xD;
+}</arg>
+              <arg flag="field" name="LCLY" type="expression">0</arg>
+              <arg flag="field" name="FQR" type="expression">$Login.User</arg>
+              <arg flag="field" name="YF" type="expression">O_PARAMETER.YF</arg>
+              <arg flag="field" name="BH" type="expression">V_4</arg>
+            </invoke>
+            <invoke component="SQL" id="0" name="数据库组件_执行SQL语句" operation="execute">
+              <describe>数据库组件_执行SQL语句</describe>
+              <arg name="TranType">sql</arg>
+              <arg name="SQL">["insert into lc_GDSY_YDGZPJ_zxxx\r\n  (id,\r\n   zxqc,\r\n   zxjc,\r\n   zxdm,\r\n   fxqc,\r\n   ssrq,\r\n   zqqxr,\r\n   zxrq,\r\n   zqdqr,\r\n   zqdfr,\r\n   xm,\r\n   zxxx,\r\n   lc_gdsy_ydgzpj_id)\r\n  select func_nextid('lc_GDSY_YDGZPJ_zxxx'),\r\n         xx.zgqc,\r\n         xx.zqjc,\r\n         xx.zqdm,\r\n         xx.fxqc,\r\n         xx.w_ssrq,\r\n         xx.w_jxqsr,\r\n         xx.w_jxjzr,\r\n         xx.w_dqr,\r\n         xx.w_dfr,\r\n         xx.xm,\r\n         xx.id,\r\n         {0}\r\n    from t_gdsy_zxxx xx\r\n   where xx.xm ={1}\r\n   and to_date(xx.w_jxqsr,'yyyymmdd')&lt;sysdate and to_date(xx.w_dqr,'yyyymmdd')&gt;sysdate",[{"expression":"V_3.ID","length":"","scale":"","type":"1"},{"expression":"V_3.XM","length":"","scale":"","type":"1"}]]</arg>
+            </invoke>
+            <invoke component="Workflow" id="0" name="工作流组件_执行动作" operation="doAction">
+              <describe>工作流组件_执行动作</describe>
+              <arg name="@objectName">lc_GDSY_YDGZPJ</arg>
+              <arg name="@ID" type="expression">V_3.ID</arg>
+              <arg name="actionID">4</arg>
+              <arg name="user">0</arg>
+            </invoke>
+          </sequence>
+        </forEach>
+      </sequence>
+    </if>
+  </sequence>
+</process>
+
