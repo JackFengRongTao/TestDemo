@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="gb2312"?>
+<!DOCTYPE workflow PUBLIC "-//Apexsoft LiveBos//DTD Workflow 2.8//EN" "http://www.livebos.com/workflow/workflow_2_8_abs.dtd"><workflow>
+  <meta name="Describe">月度跟踪评价</meta>
+  <meta name="Designer">Studio</meta>
+  <meta name="modify">2020-01-10 14:23:23</meta>
+  <meta name="created">2019-12-25 17:36:05</meta>
+  <meta name="WorkflowType">2</meta>
+  <meta name="WorkflowName">WF_YDGZPJ</meta>
+  <meta name="workflow.category"></meta>
+  <meta name="version"></meta>
+  <object  name="lc_GDSY_YDGZPJ" editAttribute="0" >
+  </object>
+  <initial-actions>
+    <action id="0" name="开始">
+      <meta name="NodeType">0</meta>
+      <results>
+        <unconditional-result id="2" old-status="完成" status="待处理" step="3">
+        </unconditional-result>
+      </results>
+    </action>
+  </initial-actions>
+  <steps>
+    <step id="1" name="结束">
+      <meta name="NodeType">1</meta>
+      <meta name="finish">true</meta>
+    </step>
+    <step id="3" name="自动发起">
+      <meta name="NodeType">2</meta>
+      <object  name="lc_GDSY_YDGZPJ" editAttribute="0" >
+        <columns>
+          <column  name="ID" disabled="false" hidden="true" summary="false">
+          </column>
+          <column  name="InstID" disabled="false" hidden="true" summary="false">
+          </column>
+          <column  name="ZT" disabled="true" hidden="false" summary="false">
+          </column>
+          <column  name="FXR" disabled="true" hidden="false" summary="false">
+          </column>
+          <column  name="XM" disabled="true" hidden="false" summary="false">
+          </column>
+          <column  name="XMJD" disabled="true" hidden="false" summary="false">
+          </column>
+          <column  name="XMLX" disabled="true" hidden="false" summary="false">
+          </column>
+          <column  name="XMQXR" disabled="true" hidden="false" summary="false">
+          </column>
+          <column  name="ZXXX" disabled="true" hidden="false" summary="false">
+            <object  name="lc_GDSY_YDGZPJ_ZXXX" editAttribute="127" >
+              <columns>
+                <column  name="ID" disabled="false" hidden="true" summary="false">
+                </column>
+                <column  name="ZXQC" disabled="false" hidden="false" summary="false">
+                </column>
+                <column  name="ZXJC" disabled="false" hidden="false" summary="false">
+                </column>
+                <column  name="ZXDM" disabled="false" hidden="false" summary="false">
+                </column>
+                <column  name="FXQC" disabled="false" hidden="false" summary="false">
+                </column>
+                <column  name="SSRQ" disabled="false" hidden="false" summary="false">
+                </column>
+                <column  name="ZQQXR" disabled="false" hidden="false" summary="false">
+                </column>
+                <column  name="ZXRQ" disabled="false" hidden="false" summary="false">
+                </column>
+                <column  name="ZQDQR" disabled="false" hidden="false" summary="false">
+                </column>
+                <column  name="ZXXX" disabled="false" hidden="true" summary="false">
+                </column>
+                <column  name="XM" disabled="false" hidden="true" summary="false">
+                </column>
+              </columns>
+            </object>
+          </column>
+          <column  name="FJ" disabled="false" hidden="false" summary="false">
+          </column>
+          <column  name="BZ" disabled="false" hidden="false" summary="false">
+          </column>
+          <column  name="FQR" disabled="false" hidden="true" summary="false">
+          </column>
+          <column  name="FQSJ" disabled="false" hidden="true" summary="false">
+          </column>
+        </columns>
+      </object>
+      <notify >
+      </notify>
+      <actions>
+        <action id="4" name="提交">
+          <meta name="NodeType">5</meta>
+          <results>
+            <unconditional-result id="5" old-status="完成" status="待处理" step="6">
+            </unconditional-result>
+          </results>
+        </action>
+      </actions>
+    </step>
+    <step id="6" name="后续跟踪及受托管理人员" owner="$AM{2}">
+      <meta name="NodeType">2</meta>
+      <meta name="step.notify.approve.done">true</meta>
+      <object  name="lc_GDSY_YDGZPJ" editAttribute="0" >
+        <columns>
+          <column  name="ID" disabled="false" hidden="true" summary="false">
+          </column>
+          <column  name="InstID" disabled="false" hidden="true" summary="false">
+          </column>
+          <column  name="ZT" disabled="true" hidden="false" summary="false">
+          </column>
+          <column  name="FXR" disabled="true" hidden="false" summary="false">
+          </column>
+          <column  name="XM" disabled="true" hidden="false" summary="false">
+          </column>
+          <column  name="XMJD" disabled="true" hidden="false" summary="false">
+          </column>
+          <column  name="XMLX" disabled="true" hidden="false" summary="false">
+          </column>
+          <column  name="XMQXR" disabled="true" hidden="false" summary="false">
+          </column>
+          <column  name="ZXXX" disabled="true" hidden="false" summary="false">
+            <object  name="lc_GDSY_YDGZPJ_ZXXX" editAttribute="127" >
+              <columns>
+                <column  name="ID" disabled="false" hidden="true" summary="false">
+                </column>
+                <column  name="ZXQC" disabled="false" hidden="false" summary="false">
+                </column>
+                <column  name="ZXJC" disabled="false" hidden="false" summary="false">
+                </column>
+                <column  name="ZXDM" disabled="false" hidden="false" summary="false">
+                </column>
+                <column  name="FXQC" disabled="false" hidden="false" summary="false">
+                </column>
+                <column  name="SSRQ" disabled="false" hidden="false" summary="false">
+                </column>
+                <column  name="ZQQXR" disabled="false" hidden="false" summary="false">
+                </column>
+                <column  name="ZXRQ" disabled="false" hidden="false" summary="false">
+                </column>
+                <column  name="ZQDQR" disabled="false" hidden="false" summary="false">
+                </column>
+                <column  name="ZQDFR" disabled="false" hidden="false" summary="false">
+                </column>
+                <column  name="ZXXX" disabled="false" hidden="true" summary="false">
+                </column>
+                <column  name="XM" disabled="false" hidden="true" summary="false">
+                </column>
+              </columns>
+            </object>
+          </column>
+          <column  name="FJ" disabled="false" hidden="false" summary="false">
+          </column>
+          <column  name="BH" disabled="false" hidden="true" summary="false">
+          </column>
+          <column  name="BZ" disabled="false" hidden="false" summary="false">
+          </column>
+          <column  name="SHEYJ" disabled="false" hidden="false" summary="false">
+            <object  name="lc_GDSY_YDGZPJ_SHEYJ" editAttribute="127" >
+              <columns>
+                <column  name="ID" disabled="false" hidden="true" summary="false">
+                </column>
+                <column  name="SHR" disabled="false" hidden="false" summary="false">
+                </column>
+                <column  name="SHRYJ" disabled="false" hidden="false" summary="false">
+                </column>
+                <column  name="SHSJ" disabled="false" hidden="false" summary="false">
+                </column>
+              </columns>
+            </object>
+          </column>
+          <column  name="LCLY" disabled="false" hidden="true" summary="false">
+          </column>
+          <column  name="YF" disabled="false" hidden="true" summary="false">
+          </column>
+          <column  name="FQR" disabled="false" hidden="true" summary="false">
+          </column>
+          <column  name="FQSJ" disabled="false" hidden="true" summary="false">
+          </column>
+        </columns>
+      </object>
+      <dynOwners>
+        <dynOwner  type="0" describe="动态用户" >
+          <expression><![CDATA[
+["tUser.ID in( select  distinct fzr  from   T_GDSY_JSRYXMGL where xm = {0} and js =(select  id  from   T_GDSY_JSJBXX where  jsmc = '后续跟踪及受托管理人员'))",[{"expression":"O_WORKFLOW.XM","length":0,"scale":0,"type":1}]]]]></expression>
+          </dynOwner>
+              </dynOwners>
+      <notify >
+      </notify>
+      <actions>
+        <action id="7" name="提交">
+          <meta name="NodeType">5</meta>
+          <results>
+            <unconditional-result id="27" old-status="完成" status="待处理" step="24">
+            </unconditional-result>
+          </results>
+        </action>
+      </actions>
+    </step>
+    <step id="24" name="项目现场负责人" owner="$AM{2}">
+      <meta name="NodeType">2</meta>
+      <meta name="step.notify.approve.done">true</meta>
+      <object  name="lc_GDSY_YDGZPJ" editAttribute="0" >
+        <columns>
+          <column  name="ID" disabled="false" hidden="true" summary="false">
+          </column>
+          <column  name="InstID" disabled="false" hidden="true" summary="false">
+          </column>
+          <column  name="ZT" disabled="true" hidden="false" summary="false">
+          </column>
+          <column  name="FXR" disabled="true" hidden="false" summary="false">
+          </column>
+          <column  name="XM" disabled="true" hidden="false" summary="false">
+          </column>
+          <column  name="XMJD" disabled="true" hidden="false" summary="false">
+          </column>
+          <column  name="XMLX" disabled="true" hidden="false" summary="false">
+          </column>
+          <column  name="XMQXR" disabled="true" hidden="false" summary="false">
+          </column>
+          <column  name="ZXXX" disabled="true" hidden="false" summary="false">
+            <object  name="lc_GDSY_YDGZPJ_ZXXX" editAttribute="127" >
+              <columns>
+                <column  name="ID" disabled="false" hidden="true" summary="false">
+                </column>
+                <column  name="ZXQC" disabled="false" hidden="false" summary="false">
+                </column>
+                <column  name="ZXJC" disabled="false" hidden="false" summary="false">
+                </column>
+                <column  name="ZXDM" disabled="false" hidden="false" summary="false">
+                </column>
+                <column  name="FXQC" disabled="false" hidden="false" summary="false">
+                </column>
+                <column  name="SSRQ" disabled="false" hidden="false" summary="false">
+                </column>
+                <column  name="ZQQXR" disabled="false" hidden="false" summary="false">
+                </column>
+                <column  name="ZXRQ" disabled="false" hidden="false" summary="false">
+                </column>
+                <column  name="ZQDQR" disabled="false" hidden="false" summary="false">
+                </column>
+                <column  name="ZQDFR" disabled="false" hidden="false" summary="false">
+                </column>
+                <column  name="ZXXX" disabled="false" hidden="true" summary="false">
+                </column>
+                <column  name="XM" disabled="false" hidden="true" summary="false">
+                </column>
+              </columns>
+            </object>
+          </column>
+          <column  name="FJ" disabled="true" hidden="false" summary="false">
+          </column>
+          <column  name="BH" disabled="false" hidden="true" summary="false">
+          </column>
+          <column  name="BZ" disabled="false" hidden="false" summary="false">
+          </column>
+          <column  name="SHEYJ" disabled="false" hidden="false" summary="false">
+            <object  name="lc_GDSY_YDGZPJ_SHEYJ" editAttribute="63" >
+              <columns>
+                <column  name="ID" disabled="false" hidden="true" summary="false">
+                </column>
+                <column  name="SHR" disabled="true" hidden="false" summary="false">
+                </column>
+                <column  name="SHRYJ" disabled="true" hidden="false" summary="false">
+                </column>
+                <column  name="SHSJ" disabled="true" hidden="false" summary="false">
+                </column>
+              </columns>
+            </object>
+          </column>
+          <column  name="LCLY" disabled="false" hidden="true" summary="false">
+          </column>
+          <column  name="YF" disabled="false" hidden="true" summary="false">
+          </column>
+          <column  name="FQR" disabled="false" hidden="true" summary="false">
+          </column>
+          <column  name="FQSJ" disabled="false" hidden="true" summary="false">
+          </column>
+          <column  name="SHEYJ.APPROVE" disabled="false" hidden="false" summary="false">
+            <object  name="lc_GDSY_YDGZPJ_SHEYJ" editAttribute="0" >
+              <columns>
+                <column  name="ID" disabled="false" hidden="true" summary="false">
+                </column>
+                <column  name="SHR" disabled="false" hidden="true" summary="false">
+                </column>
+                <column  name="SHRYJ" disabled="false" hidden="false" summary="false">
+                </column>
+                <column  name="SHSJ" disabled="false" hidden="true" summary="false">
+                </column>
+              </columns>
+            </object>
+          </column>
+        </columns>
+      </object>
+      <dynOwners>
+        <dynOwner  type="0" describe="动态用户" >
+          <expression><![CDATA[
+["tUser.ID in( select  distinct fzr  from   T_GDSY_JSRYXMGL where xm = {0} and js =(select  id  from   T_GDSY_JSJBXX where  jsmc = '项目现场负责人'))",[{"expression":"O_WORKFLOW.XM","length":0,"scale":0,"type":1}]]]]></expression>
+          </dynOwner>
+              </dynOwners>
+      <notify >
+      </notify>
+      <actions>
+        <action id="25" name="通过">
+          <meta name="NodeType">5</meta>
+          <results>
+            <unconditional-result id="33" old-status="完成" status="待处理" step="30">
+            </unconditional-result>
+          </results>
+        </action>
+        <action id="26" name="驳回">
+          <meta name="NodeType">5</meta>
+          <results>
+            <unconditional-result id="29" old-status="完成" status="待处理" step="6">
+            </unconditional-result>
+          </results>
+        </action>
+      </actions>
+    </step>
+    <step id="30" name="项目负责人" owner="$AM{2}">
+      <meta name="NodeType">2</meta>
+      <meta name="step.notify.approve.done">true</meta>
+      <object  name="lc_GDSY_YDGZPJ" editAttribute="0" >
+        <columns>
+          <column  name="ID" disabled="false" hidden="true" summary="false">
+          </column>
+          <column  name="InstID" disabled="false" hidden="true" summary="false">
+          </column>
+          <column  name="ZT" disabled="true" hidden="false" summary="false">
+          </column>
+          <column  name="FXR" disabled="true" hidden="false" summary="false">
+          </column>
+          <column  name="XM" disabled="true" hidden="false" summary="false">
+          </column>
+          <column  name="XMJD" disabled="true" hidden="false" summary="false">
+          </column>
+          <column  name="XMLX" disabled="true" hidden="false" summary="false">
+          </column>
+          <column  name="XMQXR" disabled="true" hidden="false" summary="false">
+          </column>
+          <column  name="ZXXX" disabled="true" hidden="false" summary="false">
+            <object  name="lc_GDSY_YDGZPJ_ZXXX" editAttribute="127" >
+              <columns>
+                <column  name="ID" disabled="false" hidden="true" summary="false">
+                </column>
+                <column  name="ZXQC" disabled="false" hidden="false" summary="false">
+                </column>
+                <column  name="ZXJC" disabled="false" hidden="false" summary="false">
+                </column>
+                <column  name="ZXDM" disabled="false" hidden="false" summary="false">
+                </column>
+                <column  name="FXQC" disabled="false" hidden="false" summary="false">
+                </column>
+                <column  name="SSRQ" disabled="false" hidden="false" summary="false">
+                </column>
+                <column  name="ZQQXR" disabled="false" hidden="false" summary="false">
+                </column>
+                <column  name="ZXRQ" disabled="false" hidden="false" summary="false">
+                </column>
+                <column  name="ZQDQR" disabled="false" hidden="false" summary="false">
+                </column>
+                <column  name="ZQDFR" disabled="false" hidden="false" summary="false">
+                </column>
+                <column  name="ZXXX" disabled="false" hidden="true" summary="false">
+                </column>
+                <column  name="XM" disabled="false" hidden="true" summary="false">
+                </column>
+              </columns>
+            </object>
+          </column>
+          <column  name="FJ" disabled="true" hidden="false" summary="false">
+          </column>
+          <column  name="BH" disabled="false" hidden="true" summary="false">
+          </column>
+          <column  name="BZ" disabled="false" hidden="false" summary="false">
+          </column>
+          <column  name="SHEYJ" disabled="false" hidden="false" summary="false">
+            <object  name="lc_GDSY_YDGZPJ_SHEYJ" editAttribute="63" >
+              <columns>
+                <column  name="ID" disabled="false" hidden="true" summary="false">
+                </column>
+                <column  name="SHR" disabled="false" hidden="false" summary="false">
+                </column>
+                <column  name="SHRYJ" disabled="false" hidden="false" summary="false">
+                </column>
+                <column  name="SHSJ" disabled="false" hidden="false" summary="false">
+                </column>
+              </columns>
+            </object>
+          </column>
+          <column  name="LCLY" disabled="false" hidden="true" summary="false">
+          </column>
+          <column  name="YF" disabled="false" hidden="true" summary="false">
+          </column>
+          <column  name="FQR" disabled="false" hidden="true" summary="false">
+          </column>
+          <column  name="FQSJ" disabled="false" hidden="true" summary="false">
+          </column>
+          <column  name="SHEYJ.APPROVE" disabled="false" hidden="false" summary="false">
+            <object  name="lc_GDSY_YDGZPJ_SHEYJ" editAttribute="0" >
+              <columns>
+                <column  name="ID" disabled="false" hidden="true" summary="false">
+                </column>
+                <column  name="SHR" disabled="false" hidden="true" summary="false">
+                </column>
+                <column  name="SHRYJ" disabled="false" hidden="false" summary="false">
+                </column>
+                <column  name="SHSJ" disabled="false" hidden="true" summary="false">
+                </column>
+              </columns>
+            </object>
+          </column>
+        </columns>
+      </object>
+      <dynOwners>
+        <dynOwner  type="0" describe="动态用户" >
+          <expression><![CDATA[
+["tUser.ID in( select  distinct fzr  from   T_GDSY_JSRYXMGL where xm = {0} and js =(select  id  from   T_GDSY_JSJBXX where  jsmc = '项目负责人'))",[{"expression":"O_WORKFLOW.XM","length":0,"scale":0,"type":1}]]]]></expression>
+          </dynOwner>
+              </dynOwners>
+      <notify >
+      </notify>
+      <actions>
+        <action id="31" name="通过">
+          <meta name="NodeType">5</meta>
+          <results>
+            <unconditional-result id="39" old-status="完成" status="待处理" step="36">
+            </unconditional-result>
+          </results>
+        </action>
+        <action id="32" name="驳回">
+          <meta name="NodeType">5</meta>
+          <results>
+            <unconditional-result id="35" old-status="完成" status="待处理" step="6">
+            </unconditional-result>
+          </results>
+        </action>
+      </actions>
+    </step>
+    <step id="36" name="质控人员" owner="$AM{2}">
+      <meta name="NodeType">2</meta>
+      <meta name="step.notify.approve.done">true</meta>
+      <object  name="lc_GDSY_YDGZPJ" editAttribute="0" >
+        <columns>
+          <column  name="ID" disabled="false" hidden="true" summary="false">
+          </column>
+          <column  name="InstID" disabled="false" hidden="true" summary="false">
+          </column>
+          <column  name="ZT" disabled="true" hidden="false" summary="false">
+          </column>
+          <column  name="FXR" disabled="true" hidden="false" summary="false">
+          </column>
+          <column  name="XM" disabled="true" hidden="false" summary="false">
+          </column>
+          <column  name="XMJD" disabled="true" hidden="false" summary="false">
+          </column>
+          <column  name="XMLX" disabled="true" hidden="false" summary="false">
+          </column>
+          <column  name="XMQXR" disabled="true" hidden="false" summary="false">
+          </column>
+          <column  name="ZXXX" disabled="true" hidden="false" summary="false">
+            <object  name="lc_GDSY_YDGZPJ_ZXXX" editAttribute="127" >
+              <columns>
+                <column  name="ID" disabled="false" hidden="true" summary="false">
+                </column>
+                <column  name="ZXQC" disabled="false" hidden="false" summary="false">
+                </column>
+                <column  name="ZXJC" disabled="false" hidden="false" summary="false">
+                </column>
+                <column  name="ZXDM" disabled="false" hidden="false" summary="false">
+                </column>
+                <column  name="FXQC" disabled="false" hidden="false" summary="false">
+                </column>
+                <column  name="SSRQ" disabled="false" hidden="false" summary="false">
+                </column>
+                <column  name="ZQQXR" disabled="false" hidden="false" summary="false">
+                </column>
+                <column  name="ZXRQ" disabled="false" hidden="false" summary="false">
+                </column>
+                <column  name="ZQDQR" disabled="false" hidden="false" summary="false">
+                </column>
+                <column  name="ZQDFR" disabled="false" hidden="false" summary="false">
+                </column>
+                <column  name="ZXXX" disabled="false" hidden="true" summary="false">
+                </column>
+                <column  name="XM" disabled="false" hidden="true" summary="false">
+                </column>
+              </columns>
+            </object>
+          </column>
+          <column  name="FJ" disabled="true" hidden="false" summary="false">
+          </column>
+          <column  name="BH" disabled="false" hidden="true" summary="false">
+          </column>
+          <column  name="BZ" disabled="false" hidden="false" summary="false">
+          </column>
+          <column  name="SHEYJ" disabled="false" hidden="false" summary="false">
+            <object  name="lc_GDSY_YDGZPJ_SHEYJ" editAttribute="63" >
+              <columns>
+                <column  name="ID" disabled="false" hidden="true" summary="false">
+                </column>
+                <column  name="SHR" disabled="false" hidden="false" summary="false">
+                </column>
+                <column  name="SHRYJ" disabled="false" hidden="false" summary="false">
+                </column>
+                <column  name="SHSJ" disabled="false" hidden="false" summary="false">
+                </column>
+              </columns>
+            </object>
+          </column>
+          <column  name="LCLY" disabled="false" hidden="true" summary="false">
+          </column>
+          <column  name="YF" disabled="false" hidden="true" summary="false">
+          </column>
+          <column  name="FQR" disabled="false" hidden="true" summary="false">
+          </column>
+          <column  name="FQSJ" disabled="false" hidden="true" summary="false">
+          </column>
+          <column  name="SHEYJ.APPROVE" disabled="false" hidden="false" summary="false">
+            <object  name="lc_GDSY_YDGZPJ_SHEYJ" editAttribute="0" >
+              <columns>
+                <column  name="ID" disabled="false" hidden="true" summary="false">
+                </column>
+                <column  name="SHR" disabled="false" hidden="true" summary="false">
+                </column>
+                <column  name="SHRYJ" disabled="false" hidden="false" summary="false">
+                </column>
+                <column  name="SHSJ" disabled="false" hidden="true" summary="false">
+                </column>
+              </columns>
+            </object>
+          </column>
+        </columns>
+      </object>
+      <dynOwners>
+        <dynOwner  type="0" describe="动态用户" >
+          <expression><![CDATA[
+["tUser.ID in( select  distinct fzr  from   T_GDSY_JSRYXMGL where xm = {0} and js =(select  id  from   T_GDSY_JSJBXX where  jsmc = '质控人员'))",[{"expression":"O_WORKFLOW.XM","length":0,"scale":0,"type":1}]]]]></expression>
+          </dynOwner>
+              </dynOwners>
+      <notify >
+      </notify>
+      <actions>
+        <action id="37" name="通过">
+          <meta name="NodeType">5</meta>
+          <results>
+            <unconditional-result id="40" old-status="完成" status="待处理" step="1">
+              <pre-functions>
+                <function id="0" name="abs.FormInsert" type="class">
+                  <arg name="$F{SHBZ}">3</arg>
+                  <arg name="Table">T_GS_DAD</arg>
+                  <arg name="$F{WDLY}">ABS_SQLVALUE(&quot;select d.wdly from t_gs_dadcs d where d.bh='A004' and d.xmlb=2 and rownum=1&quot;,[])</arg>
+                  <arg name="$F{RQ}">O_WORKFLOW.YF</arg>
+                  <arg name="$F{ZT}">1</arg>
+                  <arg name="$F{ZDXXZ}">ABS_SQLVALUE(&quot;select d.zdxxz from t_gs_dadcs d where d.bh='A004' and d.xmlb=2 and rownum=1&quot;,[])</arg>
+                  <arg name="$F{XM}">O_WORKFLOW.XM</arg>
+                  <arg name="$F{SFJYBB}">ABS_SQLVALUE(&quot;select d.sfbb from t_gs_dadcs d where d.bh='A004' and d.xmlb=2 and rownum=1&quot;,[])</arg>
+                  <arg name="$F{SCSJ}">ABS_SQLVALUE(&quot;select to_char(sysdate,'yyyy-mm-dd HH24:MI:SS') from dual&quot;,[])</arg>
+                  <arg name="$F{MC}">ABS_SQLVALUE(&quot;select d.name from t_gs_dadcs d where d.bh='A004' and d.xmlb=2 and rownum=1&quot;,[])</arg>
+                  <arg name="$F{WD}">O_WORKFLOW.FJ</arg>
+                  <arg name="$F{DADID}">ABS_SQLVALUE(&quot;select d.id from t_gs_dadcs d where d.bh='A004' and d.xmlb=2 and rownum=1&quot;,[])</arg>
+                  <arg name="class.name">com.apex.workflow.FormInsertFunction</arg>
+                  <arg name="$F{SX}">ABS_SQLVALUE(&quot;select d.sx from t_gs_dadcs d where d.bh='A004' and d.xmlb=2 and rownum=1&quot;,[])</arg>
+                  <arg name="$F{SHRY}">null</arg>
+                  <arg name="$F{SCRY}">null</arg>
+                  <arg name="$F{BH}">ABS_SQLVALUE(&quot;select d.bh from t_gs_dadcs d where d.bh='A004' and d.xmlb=2 and rownum=1&quot;,[])</arg>
+                  <arg name="$F{MS}">O_WORKFLOW.ZT</arg>
+                </function>
+              </pre-functions>
+            </unconditional-result>
+          </results>
+        </action>
+        <action id="38" name="驳回">
+          <meta name="NodeType">5</meta>
+          <results>
+            <unconditional-result id="41" old-status="完成" status="待处理" step="6">
+            </unconditional-result>
+          </results>
+        </action>
+      </actions>
+    </step>
+  </steps>
+</workflow>

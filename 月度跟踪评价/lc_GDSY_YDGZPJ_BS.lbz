@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="GB2312"?>
+<process xmlns="http://www.livebos.com/bizlogic/process" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" attribute="0" exitOnStandardFault="false" isHorizontalLayout="false" method="lc_GDSY_YDGZPJ_BS" name="lc_GDSY_YDGZPJ_BS" object="lc_GDSY_YDGZPJ" type="6" xsi:schemaLocation="http://www.livebos.com/bizlogic/process http://www.livebos.com/bizlogic_process.xsd">
+  <describe>文档归档对象服务</describe>
+  <variables>
+    <variable describe="V_1" messageType="" name="V_1" type="resultSet" />
+    <variable describe="V_2" messageType="" name="V_2" type="unknown" />
+  </variables>
+  <sequence id="0" name="顺序">
+    <invoke component="SQL" id="0" name="数据库组件_SQL查询" operation="query">
+      <describe>数据库组件_SQL查询</describe>
+      <arg name="TranType">sql</arg>
+      <arg name="SQL">["select d.id,d.name,d.name,d.xmlb,d.sx,d.wdlx,d.wdlx,d.wdly,d.sfbb,d.glmb,d.zdxxz,d.bh from t_gs_dadcs d where d.bh='A004' and d.xmlb=2",[]]</arg>
+      <arg name="@retResultSet" type="output">V_1</arg>
+    </invoke>
+    <forEach collection="V_1" id="0" toVariable="V_2">
+      <describe>迭代</describe>
+      <invoke component="FormOperate" id="0" name="对象组件_新增" operation="insert">
+        <describe>新增对象[项目底稿档案袋]</describe>
+        <arg name="@objectName">T_GS_DAD</arg>
+        <arg flag="field" name="XM" type="expression">O_MASTER.XM</arg>
+        <arg flag="field" name="DADID" type="expression">V_2.id</arg>
+        <arg flag="field" name="BH" type="expression">V_2.bh</arg>
+        <arg flag="field" name="MC" type="expression">V_2.name</arg>
+        <arg flag="field" name="RQ" type="expression">O_MASTER.FQRQ</arg>
+        <arg flag="field" name="WD" type="expression">O_MASTER.FJ</arg>
+        <arg flag="field" name="SFJYBB" type="expression">V_2.sfbb</arg>
+        <arg flag="field" name="ZT" type="expression">1</arg>
+        <arg flag="field" name="SHBZ" type="expression">3</arg>
+        <arg flag="field" name="SHRY" type="expression">null</arg>
+        <arg flag="field" name="SCSJ" type="expression">ABS_SQLVALUE("select to_char(sysdate,'yyyy-mm-dd HH24:MI:SS') from dual",[])</arg>
+        <arg flag="field" name="SCRY" type="expression">null</arg>
+        <arg flag="field" name="SX" type="expression">V_2.sx</arg>
+        <arg flag="field" name="WDLY" type="expression">V_2.wdly</arg>
+        <arg flag="field" name="ZDXXZ" type="expression">V_2.zdxxz</arg>
+        <arg flag="field" name="MS" type="expression">O_MASTER.ZT</arg>
+      </invoke>
+    </forEach>
+  </sequence>
+</process>
+

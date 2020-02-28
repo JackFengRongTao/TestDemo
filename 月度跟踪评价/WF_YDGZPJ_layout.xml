@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="GB2312"?>
+<layouts>
+  <pools />
+  <cell id="0" type="InitialActionCell" height="32" width="32" x="361" y="34" />
+  <cell id="1" type="StepCell" height="32" width="32" x="361" y="756" />
+  <cell id="3" type="StepCell" height="70" width="82" x="336" y="96" />
+  <cell id="4" type="ActionCell" height="40" width="60" x="347" y="165" />
+  <transition id="5" />
+  <cell id="6" type="StepCell" height="70" width="82" x="336" y="228" />
+  <cell id="7" type="ActionCell" height="40" width="60" x="349" y="297" />
+  <transition id="27" />
+  <cell id="24" type="StepCell" height="70" width="82" x="336" y="348" />
+  <cell id="25" type="ActionCell" height="40" width="60" x="347" y="418" />
+  <transition id="33" />
+  <cell id="26" type="ActionCell" height="40" width="60" x="421" y="378" />
+  <transition id="29">
+    <bendpoint index="0">
+      <dimension type="first" w="0" h="-66" />
+      <dimension type="second" w="74" h="59" />
+    </bendpoint>
+  </transition>
+  <cell id="30" type="StepCell" height="70" width="82" x="336" y="480" />
+  <cell id="31" type="ActionCell" height="40" width="60" x="347" y="549" />
+  <transition id="39" />
+  <cell id="32" type="ActionCell" height="40" width="60" x="421" y="504" />
+  <transition id="35">
+    <bendpoint index="0">
+      <dimension type="first" w="160" h="-121" />
+      <dimension type="second" w="234" h="130" />
+    </bendpoint>
+    <bendpoint index="1">
+      <dimension type="first" w="65" h="-254" />
+      <dimension type="second" w="139" h="-3" />
+    </bendpoint>
+  </transition>
+  <cell id="36" type="StepCell" height="70" width="82" x="336" y="624" />
+  <cell id="37" type="ActionCell" height="40" width="60" x="347" y="693" />
+  <transition id="40" />
+  <cell id="38" type="ActionCell" height="40" width="60" x="277" y="646" />
+  <transition id="41">
+    <bendpoint index="0">
+      <dimension type="first" w="-163" h="-48" />
+      <dimension type="second" w="-233" h="345" />
+    </bendpoint>
+    <bendpoint index="1">
+      <dimension type="first" w="-163" h="-217" />
+      <dimension type="second" w="-233" h="176" />
+    </bendpoint>
+    <bendpoint index="2">
+      <dimension type="first" w="-65" h="-391" />
+      <dimension type="second" w="-135" h="2" />
+    </bendpoint>
+  </transition>
+</layouts>
+

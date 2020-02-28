@@ -1,0 +1,7 @@
+diff a/xml/流程管理/月度跟踪评价/lc_GDSY_YDGZPJ_M.lbz b/xml/流程管理/月度跟踪评价/lc_GDSY_YDGZPJ_M.lbz	(rejected hunks)
+@@ -1,4 +0,4 @@
+-<?xml version="1.0" encoding="GB2312"?>
++<?xml version="1.0" encoding="gb2312"?>
+ <process xmlns="http://www.livebos.com/bizlogic/process" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" attribute="0" exitOnStandardFault="false" isHorizontalLayout="false" method="lc_GDSY_YDGZPJ_M" name="lc_GDSY_YDGZPJ_M" object="lc_GDSY_YDGZPJ" type="0" xsi:schemaLocation="http://www.livebos.com/bizlogic/process http://www.livebos.com/bizlogic_process.xsd">
+   <describe>�¶ȸ�������-�����¶���������</describe>
+   <variables>
