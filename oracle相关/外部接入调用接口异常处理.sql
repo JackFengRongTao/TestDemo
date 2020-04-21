@@ -1,7 +1,11 @@
 --异常情况日志
-select * from T_WBJR_JKDYYCCL a order by id desc;
+select  *  from   T_WBJR_JKDYYCCL a order by id desc;
 --短信发送
 select  *  from   T_DXGL_XXFSRZ order by id desc;
+
+--短信发送修改
+select  *  from   T_DXGL_XXFSRZ order by id desc for update;
+
 --员工基本信息
 select * from tygjbxx a where a.gyh = (select b.userid from tUser b where b.id = 12911);
 --股东号
