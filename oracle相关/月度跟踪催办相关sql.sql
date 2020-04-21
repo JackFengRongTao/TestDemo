@@ -22,8 +22,8 @@ select e.id,e.userId,e.name from tUser e where e.ID in(select distinct fzr
    and d.id = 1402
    and b.jsmc in('后续跟踪及受托管理人员','项目现场负责人','项目负责人','质控人员'));
    
-select *  from tsysparam;
+select  *  from tsysparam;
 
-select *  from txtcs ;
+select  *  from txtcs;
 
 

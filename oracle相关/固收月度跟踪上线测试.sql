@@ -59,7 +59,7 @@ select * from tuser tuser where tUser.ID in(select distinct a.fzr--,b.jsmc
    );
 
 select * from t_gdsy_fxrxx a where a.gsmc like'%常熟%';
-
+select * from t_gdsy_fxrxx a where a.id = 1412;
 select * from tuser a where a.name like'%金韬%';
 select * from tuser a where a.name like'%任越%';
 select * from tuser a where a.name like'%李倩%';
@@ -96,6 +96,8 @@ T_GDSY_XMJBXX.zqlx = 'GSZ'
                             
 select * from lc_gdsy_ydgzpj order by id desc;
 
+select * from lc_gdsy_ydgzpj_zxxx order by id desc;
+
 select * from t_gdsy_fxrxx a where a.tyshxydm='91320300673906392P';
 
 -- 催办日期 跨月问题
@@ -126,3 +128,30 @@ select rq
  
 --项目档案袋
 select * from T_GS_DAD order by id desc;
+
+
+--
+  select
+      a.id, b.id
+    from t_gdsy_fxrxx a, t_gdsy_xmjbxx b,t_gdsy_zxxx xx
+   where a.tyshxydm = b.tyshxydm and b.id = xx.xm and a.cxqbz_gsz = 1 and b.cxqbz =1 and b.zqlx ='GSZ'
+   and
+   to_date(xx.w_jxqsr,'yyyymmdd') < sysdate and to_date(xx.w_dfr,'yyyymmdd')>sysdate
+   --and a.tyshxydm = '91320505466951860R';
+
+select  *  from  t_gdsy_dstspl a  for update;
+
+-- 20200507   
+-- 
+select distinct b.id as fxr_id,b.gsmc as fxrmc,b.gszwjc,b.tyshxydm,b.frdb,b.clrq
+  from t_gdsy_xmjbxx a, t_gdsy_fxrxx b,t_gdsy_xmfl c,t_gdsy_dstspl d
+ where a.tyshxydm = b.tyshxydm
+   and a.xmfl = c.id
+   and b.id = d.fxr
+   and a.cxqbz = 1
+   and b.cxqbz_gsz = 1
+   and d.cxqbz_gsz = 1
+   and a.zqlx = 'GSZ'
+   and d.xctsrq = to_number(to_char(sysdate,'yyyymmdd'));
+
+
