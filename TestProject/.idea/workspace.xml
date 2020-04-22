@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="535853a4-567b-483b-a4c4-0973efbef433" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="GroovyConsoleState">
+    <option name="list">
+      <list>
+        <Entry>
+          <option name="moduleName" value="FengCaseDemo" />
+          <option name="url" value="file://$APPLICATION_CONFIG_DIR$/consoles/groovy/groovy_console.groovy" />
+        </Entry>
+      </list>
+    </option>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$PROJECT_DIR$/../ruanjiananzhuang/apache-maven-3.1.1-bin/apache-maven-3.1.1" />
+        <option name="userSettingsFile" value="D:\ruanjiananzhuang\apache-maven-3.1.1-bin\apache-maven-3.1.1\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="1.8" />
+  </component>
+  <component name="ProjectId" id="1YHYZpJwkh5oPpULUeLMtz3w5Ys" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1579253704497" />
+    <property name="create.test.in.the.same.root" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\03.平常测试\out\production\FengCaseDemo\com\fengcase2" />
+      <recent name="D:\03.平常测试\out\production\FengCaseDemo\com" />
+      <recent name="D:\03.平常测试\src\com\fengcase\part5" />
+      <recent name="D:\03.平常测试\src\com\fengcase" />
+      <recent name="D:\03.平常测试\out\production\FengCaseDemo\com\fengcase\part5" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\03.平常测试\src\lib" />
+      <recent name="D:\03.平常测试\src\com\fengtest" />
+      <recent name="D:\03.平常测试\out\production\FengCaseDemo\com" />
+      <recent name="D:\03.平常测试\out\production\FengCaseDemo" />
+      <recent name="D:\03.平常测试\src\com\fengcase\part4" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.TestDemo1">
+    <configuration default="true" type="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RedisUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.fengtest.RedisUtils" />
+      <module name="FengCaseDemo" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fengtest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StringContainsTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.fengtest.StringContainsTest" />
+      <module name="FengCaseDemo" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fengtest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestDemo1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.fengtest.TestDemo1" />
+      <module name="FengCaseDemo" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fengtest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Testjava" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.fengtest.Testjava" />
+      <module name="FengCaseDemo" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ThrowNewExceptionTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.fengtest.ThrowNewExceptionTest" />
+      <module name="FengCaseDemo" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fengtest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file enabled="true" id="idea.log" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.TestDemo1" />
+        <item itemvalue="Application.RedisUtils" />
+        <item itemvalue="Application.ThrowNewExceptionTest" />
+        <item itemvalue="Application.StringContainsTest" />
+        <item itemvalue="Application.Testjava" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\Administrator\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="535853a4-567b-483b-a4c4-0973efbef433" name="Default Changelist" comment="" />
+      <created>1553502201368</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1553502201368</updated>
+      <workItem from="1553502204975" duration="8000" />
+      <workItem from="1553502250094" duration="1867000" />
+      <workItem from="1553676669067" duration="701000" />
+      <workItem from="1553827870799" duration="3961000" />
+      <workItem from="1564491250418" duration="618000" />
+      <workItem from="1564533119069" duration="52000" />
+      <workItem from="1564540459029" duration="3258000" />
+      <workItem from="1564570304443" duration="7556000" />
+      <workItem from="1564620496692" duration="11657000" />
+      <workItem from="1564707063216" duration="8041000" />
+      <workItem from="1564796241294" duration="32142000" />
+      <workItem from="1564964933264" duration="14312000" />
+      <workItem from="1565005674855" duration="9027000" />
+      <workItem from="1565224048359" duration="35000" />
+      <workItem from="1565224150863" duration="3639000" />
+      <workItem from="1565243631447" duration="338000" />
+      <workItem from="1565244026741" duration="11094000" />
+      <workItem from="1565273666421" duration="134000" />
+      <workItem from="1565310985684" duration="3569000" />
+      <workItem from="1565400248832" duration="17963000" />
+      <workItem from="1565567746475" duration="1343000" />
+      <workItem from="1565616381204" duration="6070000" />
+      <workItem from="1565656157101" duration="2426000" />
+      <workItem from="1565683860463" duration="80000" />
+      <workItem from="1565683962995" duration="623000" />
+      <workItem from="1565699854364" duration="3802000" />
+      <workItem from="1565845804491" duration="153000" />
+      <workItem from="1566261294623" duration="8869000" />
+      <workItem from="1566390240954" duration="3438000" />
+      <workItem from="1566393753612" duration="243000" />
+      <workItem from="1566394026621" duration="4405000" />
+      <workItem from="1567412879218" duration="2680000" />
+      <workItem from="1567469957939" duration="2179000" />
+      <workItem from="1567558246354" duration="7643000" />
+      <workItem from="1567595467910" duration="670000" />
+      <workItem from="1567644744988" duration="3199000" />
+      <workItem from="1567688729594" duration="5157000" />
+      <workItem from="1567730046194" duration="2398000" />
+      <workItem from="1567831739846" duration="9012000" />
+      <workItem from="1567989934933" duration="1206000" />
+      <workItem from="1568075772851" duration="688000" />
+      <workItem from="1568257275356" duration="7630000" />
+      <workItem from="1568429072703" duration="1977000" />
+      <workItem from="1568530722015" duration="13909000" />
+      <workItem from="1568592789328" duration="2688000" />
+      <workItem from="1568635937372" duration="8620000" />
+      <workItem from="1568717469268" duration="8812000" />
+      <workItem from="1568767783921" duration="4339000" />
+      <workItem from="1568810164514" duration="5985000" />
+      <workItem from="1568852278284" duration="1272000" />
+      <workItem from="1568900112088" duration="599000" />
+      <workItem from="1568939631005" duration="980000" />
+      <workItem from="1568982357123" duration="673000" />
+      <workItem from="1569028178276" duration="6755000" />
+      <workItem from="1569198904746" duration="19000" />
+      <workItem from="1569388865460" duration="2762000" />
+      <workItem from="1569458260450" duration="1194000" />
+      <workItem from="1569545306510" duration="715000" />
+      <workItem from="1570512604827" duration="2706000" />
+      <workItem from="1571800295015" duration="686000" />
+      <workItem from="1571875697400" duration="7201000" />
+      <workItem from="1573200463759" duration="1382000" />
+      <workItem from="1573431729404" duration="1225000" />
+      <workItem from="1573450274051" duration="588000" />
+      <workItem from="1573550468026" duration="1956000" />
+      <workItem from="1573809769988" duration="696000" />
+      <workItem from="1574037390085" duration="5061000" />
+      <workItem from="1574124480792" duration="5611000" />
+      <workItem from="1574388079613" duration="1185000" />
+      <workItem from="1574664250454" duration="736000" />
+      <workItem from="1574831623559" duration="1206000" />
+      <workItem from="1574905024548" duration="1196000" />
+      <workItem from="1575535247628" duration="1540000" />
+      <workItem from="1575593942955" duration="2705000" />
+      <workItem from="1575856052785" duration="727000" />
+      <workItem from="1575877059866" duration="418000" />
+      <workItem from="1575880360142" duration="741000" />
+      <workItem from="1576222378174" duration="1846000" />
+      <workItem from="1576464609791" duration="6707000" />
+      <workItem from="1578451467058" duration="1058000" />
+      <workItem from="1578546550923" duration="4411000" />
+      <workItem from="1579169939169" duration="3950000" />
+      <workItem from="1579223215927" duration="4704000" />
+      <workItem from="1579267479186" duration="561000" />
+      <workItem from="1582601046628" duration="2152000" />
+      <workItem from="1585192035003" duration="2780000" />
+      <workItem from="1585401262354" duration="2847000" />
+      <workItem from="1585528294451" duration="2280000" />
+      <workItem from="1585616494413" duration="660000" />
+      <workItem from="1585701701234" duration="766000" />
+      <workItem from="1585788595681" duration="645000" />
+      <workItem from="1586313156007" duration="150000" />
+      <workItem from="1586313350117" duration="13409000" />
+      <workItem from="1586400048494" duration="12884000" />
+      <workItem from="1586478944163" duration="15341000" />
+      <workItem from="1586738246773" duration="3006000" />
+      <workItem from="1586833031022" duration="1037000" />
+      <workItem from="1586849194800" duration="1758000" />
+      <workItem from="1587101829865" duration="1946000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="574" y="121" key="#com.intellij.ide.util.MemberChooser" timestamp="1586333892090">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="121" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1586333892090" />
+    <state x="499" y="171" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog" timestamp="1586413439249">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="171" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.0.1536.824@0.0.1536.824" timestamp="1586413439249" />
+    <state x="634" y="94" width="646" height="482" key="FileChooserDialogImpl" timestamp="1586413929229">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="634" y="94" width="646" height="482" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1586413929229" />
+    <state width="1493" height="288" key="GridCell.Tab.0.bottom" timestamp="1587131059841">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="288" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1587131059841" />
+    <state width="1493" height="288" key="GridCell.Tab.0.center" timestamp="1587131059841">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="288" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1587131059841" />
+    <state width="1493" height="288" key="GridCell.Tab.0.left" timestamp="1587131059841">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="288" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1587131059841" />
+    <state width="1493" height="288" key="GridCell.Tab.0.right" timestamp="1587131059841">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="288" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1587131059841" />
+    <state width="723" height="219" key="GridCell.Tab.1.bottom" timestamp="1586513411258">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="723" height="219" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586513411258" />
+    <state width="723" height="219" key="GridCell.Tab.1.center" timestamp="1586513411258">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="723" height="219" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1586513411258" />
+    <state width="723" height="219" key="GridCell.Tab.1.left" timestamp="1586513411258">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="723" height="219" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1586513411258" />
+    <state width="723" height="219" key="GridCell.Tab.1.right" timestamp="1586513411258">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="723" height="219" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1586513411258" />
+    <state x="249" y="0" key="SettingsEditor" timestamp="1586413932250">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1586413932250" />
+    <state x="461" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1586313351700">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="461" y="241" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1586313351700" />
+    <state x="349" y="68" key="editAsTableFormatDialogDimension" timestamp="1585616538305">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="349" y="68" key="editAsTableFormatDialogDimension/0.0.1536.824@0.0.1536.824" timestamp="1585616538305" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1586506443969">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1586506443969" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/com/fengcase/part1/safeend/A0014HasInterruptedException.java</url>
+          <line>18</line>
+          <properties class="com.fengcase.part1.safeend.A0014HasInterruptedException.UseThread" method="run">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://E:/JavaEE/JavaEE/jdk/jdk1.8.0_101/src.zip!/java/util/concurrent/atomic/AtomicIntegerArray.java</url>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://E:/JavaEE/JavaEE/jdk/jdk1.8.0_101/jre/lib/rt.jar!/sun/misc/Unsafe.class</url>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
