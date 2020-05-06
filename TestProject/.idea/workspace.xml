@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="535853a4-567b-483b-a4c4-0973efbef433" name="Default Changelist" comment="" />
+    <list default="true" id="535853a4-567b-483b-a4c4-0973efbef433" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/fengtest/ExceptionOutTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/fengtest/ThrowNewExceptionDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FengCaseDemo/META-INF/FengCaseDemo.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../oracle相关/外部接入调用接口异常处理.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../oracle相关/外部接入调用接口异常处理.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../oracle相关/外部接入调用接口异常处理.~sql" beforeDir="false" afterPath="$PROJECT_DIR$/../oracle相关/外部接入调用接口异常处理.~sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../oracle相关/更新实际推送日期和下次推送日期.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../oracle相关/更新实际推送日期和下次推送日期.sql" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,7 +40,9 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="GroovyConsoleState">
     <option name="list">
@@ -62,6 +73,7 @@
     <option name="jreName" value="1.8" />
   </component>
   <component name="ProjectId" id="1YHYZpJwkh5oPpULUeLMtz3w5Ys" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -70,11 +82,12 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1579253704497" />
     <property name="create.test.in.the.same.root" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/html" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -95,22 +108,22 @@
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\git_workspace\my_git_project\TestProject\src\html" />
+      <recent name="D:\git_workspace\my_git_project\TestProject\src\com\fengtest" />
       <recent name="D:\03.平常测试\src\lib" />
       <recent name="D:\03.平常测试\src\com\fengtest" />
       <recent name="D:\03.平常测试\out\production\FengCaseDemo\com" />
-      <recent name="D:\03.平常测试\out\production\FengCaseDemo" />
-      <recent name="D:\03.平常测试\src\com\fengcase\part4" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TestDemo1">
+  <component name="RunManager" selected="Application.ThrowNewExceptionDemo">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RedisUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.fengtest.RedisUtils" />
+    <configuration name="ExceptionOutTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.fengtest.ExceptionOutTest" />
       <module name="FengCaseDemo" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -123,8 +136,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringContainsTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.fengtest.StringContainsTest" />
+    <configuration name="RedisUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.fengtest.RedisUtils" />
       <module name="FengCaseDemo" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -151,10 +164,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Testjava" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.fengtest.Testjava" />
+    <configuration name="ThrowNewExceptionDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.fengtest.ThrowNewExceptionDemo" />
       <module name="FengCaseDemo" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fengtest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -206,11 +225,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ThrowNewExceptionDemo" />
+        <item itemvalue="Application.ThrowNewExceptionTest" />
+        <item itemvalue="Application.ExceptionOutTest" />
         <item itemvalue="Application.TestDemo1" />
         <item itemvalue="Application.RedisUtils" />
-        <item itemvalue="Application.ThrowNewExceptionTest" />
-        <item itemvalue="Application.StringContainsTest" />
-        <item itemvalue="Application.Testjava" />
       </list>
     </recent_temporary>
   </component>
@@ -335,6 +354,11 @@
       <workItem from="1586833031022" duration="1037000" />
       <workItem from="1586849194800" duration="1758000" />
       <workItem from="1587101829865" duration="1946000" />
+      <workItem from="1587535210389" duration="2404000" />
+      <workItem from="1588086479392" duration="1414000" />
+      <workItem from="1588120243537" duration="2081000" />
+      <workItem from="1588237822438" duration="593000" />
+      <workItem from="1588593037154" duration="5470000" />
     </task>
     <servers />
   </component>
@@ -350,26 +374,26 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="171" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.0.1536.824@0.0.1536.824" timestamp="1586413439249" />
-    <state x="634" y="94" width="646" height="482" key="FileChooserDialogImpl" timestamp="1586413929229">
+    <state x="634" y="94" width="668" height="549" key="FileChooserDialogImpl" timestamp="1588237914345">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="634" y="94" width="646" height="482" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1586413929229" />
-    <state width="1493" height="288" key="GridCell.Tab.0.bottom" timestamp="1587131059841">
+    <state x="634" y="94" width="668" height="549" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1588237914345" />
+    <state width="1493" height="178" key="GridCell.Tab.0.bottom" timestamp="1588087915623">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="288" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1587131059841" />
-    <state width="1493" height="288" key="GridCell.Tab.0.center" timestamp="1587131059841">
+    <state width="1493" height="178" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1588087915623" />
+    <state width="1493" height="178" key="GridCell.Tab.0.center" timestamp="1588087915623">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="288" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1587131059841" />
-    <state width="1493" height="288" key="GridCell.Tab.0.left" timestamp="1587131059841">
+    <state width="1493" height="178" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1588087915623" />
+    <state width="1493" height="178" key="GridCell.Tab.0.left" timestamp="1588087915623">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="288" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1587131059841" />
-    <state width="1493" height="288" key="GridCell.Tab.0.right" timestamp="1587131059841">
+    <state width="1493" height="178" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1588087915623" />
+    <state width="1493" height="178" key="GridCell.Tab.0.right" timestamp="1588087915623">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="288" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1587131059841" />
+    <state width="1493" height="178" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1588087915623" />
     <state width="723" height="219" key="GridCell.Tab.1.bottom" timestamp="1586513411258">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -390,14 +414,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1586413932250" />
-    <state x="461" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1586313351700">
+    <state x="442" y="146" width="914" height="505" key="com.intellij.ide.util.TipDialog" timestamp="1588237822509">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="461" y="241" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1586313351700" />
+    <state x="442" y="146" width="914" height="505" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1588237822509" />
+    <state x="564" y="331" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587535279090">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="564" y="331" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1587535279090" />
     <state x="349" y="68" key="editAsTableFormatDialogDimension" timestamp="1585616538305">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="349" y="68" key="editAsTableFormatDialogDimension/0.0.1536.824@0.0.1536.824" timestamp="1585616538305" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1588087020799">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1588087020799" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1586506443969">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
