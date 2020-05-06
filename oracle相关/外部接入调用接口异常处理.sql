@@ -64,8 +64,13 @@ values
   (func_nextid('TXTCS'),
    'zhyy.wbjr.jsr',
    '外部接入接口调用异常情况短信接收人',
-   '18059140973',
+   '18059140973,15262098838',
    '外部接入接口调用异常情况短信接收人，手机号码以英文逗号隔开,例如：13636432122,15001805383');
    
-select * from  txtds;  
- 
+select * from  txtcs order by id desc;  
+
+select  *  from   user_tables  a  where a.TABLE_NAME like'%WBJR%'; 
+
+select * from  T_WBJR_JKDYYCCL;
+
+select * from tuser a where a.name like'%任越%';

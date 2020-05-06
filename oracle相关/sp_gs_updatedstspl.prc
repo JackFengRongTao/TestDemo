@@ -1,19 +1,5 @@
-/*
---过程名      : gdsy.sp_gs_updatedstspl
---过程功能   : 更新实际推送日期和下次推送日期
---备注         ：
-
---修改记录   : 
---修改日期    修改人  版本     修改内容
---2020.04.07  冯荣涛  V1.0.0   新建
-*/
-
-BEGIN
-    gdsy.pro_setversion('gdsy', 'sp_gs_updatedstspl', '1.0.0');
-END;
-/
 create or replace procedure sp_gs_updatedstspl(in_fxr in number)  --发行人id --更新实际推送日期和下次推送日期
-                                                  
+
  as
   v_sjtsrq    number(8); --实际推送日期
   v_tspl      number(12);--推送频率
@@ -34,7 +20,7 @@ begin
                        and substr(a.rq, 1, 6) =
                            to_char(add_months(trunc(sysdate),
                                               v_tspl),
-                                   'yyyymm') 
+                                   'yyyymm')
                      order by a.rq asc) b
              where rownum <=
                    (select a.csz from txtcs a where a.csdm = 'ydgzpjzxrq')) c
