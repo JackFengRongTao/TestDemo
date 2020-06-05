@@ -1,18 +1,13 @@
-package com.fengtest;
+package com.fengcase3.utils;
 
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 import redis.clients.jedis.JedisPoolConfig;
-
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 public class RedisUtils {
-	// protected static Logger logger = Logger.getLogger(RedisUtil.class);
 
-	// Redis服务器IP 测试：10.2.113.27",6379 正式：10.2.113.1
-//	private static String IP = "127.0.0.1";
 	private static String IP = "192.250.107.141";
 	// Redis密码
 	private static String PASSWORD = "abc123";

@@ -1,3 +1,5 @@
+package com.fengcase3.utils;
+
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
@@ -16,7 +18,7 @@ public class TestDemo2 {
             e.printStackTrace();
         }
 
-        //Á½²ãÑ­»·Ð§ÂÊ
+        //ï¿½ï¿½ï¿½ï¿½Ñ­ï¿½ï¿½Ð§ï¿½ï¿½
 /*        for(int i = 0 ;i<10000;i++){
             long l[] = new long[100000];
 

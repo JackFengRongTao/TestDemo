@@ -119,56 +119,7 @@ select *    from tuser f
                  where z.lc_gdsy_ydgzpj_id = 2164
                    and z.lbworkcommunication_id is not null);
                    
----×îÖÕ°æ                   
-select u.id,
-u.shr,
-u.shryj,
-u.fqgtr,
-u.gtnr,
-u.hfr,
-u.hfnr,
-u.fj,
-u.shsj,
-u.lbworkcommunication_id,
-       u.fqgtrname || '->' ||
-       (select to_char(substr(wm_concat(name), 1, 1000)) as bgtr
-          from tuser f
-         where f.id in
-               (SELECT REGEXP_SUBSTR(u.bgtr, '[^,]+', 1, rownum)
-                  FROM DUAL
-                CONNECT BY ROWNUM <=
-                           LENGTH(u.bgtr) - LENGTH(REPLACE(u.bgtr, ',', '')) + 1)) fqgt
-  from (select null id,
-               null shr,
-               null shryj,
-               (select id from tuser where id = t.inviter) fqgtr,
-               (select name from tuser where id = t.inviter) fqgtrname,
-               t.subject gtnr,
-               (select id from tuser where id = t.answerer) hfr,
-               t.response hfnr,
-               t.attachment fj,
-               t."DATE" shsj,
-               t.id lbworkcommunication_id,
-               ( select b.owner from (
-                 select a.* ,rownum rn
-                  from v_os_historystep a
-                 where a.entry_id = 6198
-                   and a.id >= t.originstepid and rownum <= 3) b where rn=3 ) bgtr
-          from LBWORKCOMMUNICATION t
-         where t.originstepid in
-               (select id from v_os_historystep a where a.entry_id = 6198)
-        -- and t.id not in
-         --   (select z.lbworkcommunication_id
-          --     from lc_gdsy_ydgzpj_sheyj z
-         --     where z.lc_gdsy_ydgzpj_id = 2168 
-          --     and z.lbworkcommunication_id is not null
-              --)        
-        ) u
-;
-
-
---
-
+---×îÖÕ°æ 
 select u.id,
 u.shr,
 u.shryj,
@@ -210,9 +161,8 @@ u.lbworkcommunication_id,
                from lc_gdsy_ydgzpj_sheyj z
               where z.lc_gdsy_ydgzpj_id = {1} 
                and z.lbworkcommunication_id is not null
-              )
-        
-        ) u
+              )        
+        ) u;
 
      
               

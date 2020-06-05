@@ -1,4 +1,4 @@
-package com.fengtest;
+package com.fengcase3.utils;
 
 public class Testjava {
     public static void main(String[] args) {

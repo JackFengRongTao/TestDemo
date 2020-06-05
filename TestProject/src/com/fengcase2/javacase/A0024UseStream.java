@@ -65,6 +65,13 @@ public class A0024UseStream {
         System.out.println("ls = " + ls);
         System.out.println("ls2 = " + ls2);
 
+        System.out.println("//-----------------------≈≈–Ú-----------------------");
+        List<Integer> list3 = new ArrayList<>();
+        list3.add(2);
+        list3.add(9);
+        list3.add(6);
+        list3.stream().sorted().forEach(System.out::println);
+        list3.stream().sorted().mapToLong(ele->ele);
 
 
     }

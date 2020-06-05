@@ -1,4 +1,4 @@
-package com.fengtest;
+package com.fengcase3.utils;
 
 /**
  * 抛出新异常并被捕获

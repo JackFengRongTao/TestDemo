@@ -1,18 +1,21 @@
 package com;
 
 /**
+ * enum类的使用
  * @Author: frt
  * @Date: 2020/1/8 10:45
  */
-public enum EnumTest {
-
+public class EnumTest {
+    public static void main(String[] args) {
+        System.out.println(Status.SCUUESS.getDesc());
+    }
 }
  enum Status {
 
     SCUUESS("1", "成功"), FAILED("2", "失败");
 
-    private String value;
-    private String desc;
+     public String value;
+     public String desc;
 
     public String getValue() {
         return value;
@@ -30,7 +33,7 @@ public enum EnumTest {
         this.desc = desc;
     }
 
-    private Status(String value, String desc) {
+      Status(String value, String desc) {
         this.value = value;
         this.desc = desc;
     }
