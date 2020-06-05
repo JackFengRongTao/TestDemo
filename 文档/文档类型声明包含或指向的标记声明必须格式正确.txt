@@ -1,0 +1,35 @@
+E:\JavaEE\JavaEE\jdk\jdk1.8.0_101\bin\java.exe -agentlib:jdwp=transport=dt_socket,address=127.0.0.1:52253,suspend=y,server=n -javaagent:C:\Users\Administrator\.IntelliJIdea2019.3\system\captureAgent\debugger-agent.jar -Dfile.encoding=UTF-8 -classpath "E:\JavaEE\JavaEE\jdk\jdk1.8.0_101\jre\lib\charsets.jar;E:\JavaEE\JavaEE\jdk\jdk1.8.0_101\jre\lib\deploy.jar;E:\JavaEE\JavaEE\jdk\jdk1.8.0_101\jre\lib\ext\access-bridge-64.jar;E:\JavaEE\JavaEE\jdk\jdk1.8.0_101\jre\lib\ext\cldrdata.jar;E:\JavaEE\JavaEE\jdk\jdk1.8.0_101\jre\lib\ext\dnsns.jar;E:\JavaEE\JavaEE\jdk\jdk1.8.0_101\jre\lib\ext\jaccess.jar;E:\JavaEE\JavaEE\jdk\jdk1.8.0_101\jre\lib\ext\jfxrt.jar;E:\JavaEE\JavaEE\jdk\jdk1.8.0_101\jre\lib\ext\localedata.jar;E:\JavaEE\JavaEE\jdk\jdk1.8.0_101\jre\lib\ext\nashorn.jar;E:\JavaEE\JavaEE\jdk\jdk1.8.0_101\jre\lib\ext\sunec.jar;E:\JavaEE\JavaEE\jdk\jdk1.8.0_101\jre\lib\ext\sunjce_provider.jar;E:\JavaEE\JavaEE\jdk\jdk1.8.0_101\jre\lib\ext\sunmscapi.jar;E:\JavaEE\JavaEE\jdk\jdk1.8.0_101\jre\lib\ext\sunpkcs11.jar;E:\JavaEE\JavaEE\jdk\jdk1.8.0_101\jre\lib\ext\zipfs.jar;E:\JavaEE\JavaEE\jdk\jdk1.8.0_101\jre\lib\javaws.jar;E:\JavaEE\JavaEE\jdk\jdk1.8.0_101\jre\lib\jce.jar;E:\JavaEE\JavaEE\jdk\jdk1.8.0_101\jre\lib\jfr.jar;E:\JavaEE\JavaEE\jdk\jdk1.8.0_101\jre\lib\jfxswt.jar;E:\JavaEE\JavaEE\jdk\jdk1.8.0_101\jre\lib\jsse.jar;E:\JavaEE\JavaEE\jdk\jdk1.8.0_101\jre\lib\management-agent.jar;E:\JavaEE\JavaEE\jdk\jdk1.8.0_101\jre\lib\plugin.jar;E:\JavaEE\JavaEE\jdk\jdk1.8.0_101\jre\lib\resources.jar;E:\JavaEE\JavaEE\jdk\jdk1.8.0_101\jre\lib\rt.jar;D:\git_workspace\my_git_project\TestProject\out\production\FengCaseDemo;D:\git_workspace\my_git_project\TestProject\src\lib\json.jar;D:\git_workspace\my_git_project\TestProject\src\lib\dom4j-1.6.1.jar;D:\git_workspace\my_git_project\TestProject\src\lib\jedis-3.1.0.jar;D:\git_workspace\my_git_project\TestProject\src\lib\log4j-1.2.17.jar;D:\git_workspace\my_git_project\TestProject\src\lib\slf4j-api-1.7.0.jar;D:\git_workspace\my_git_project\TestProject\src\lib\kafkaClientServer.jar;D:\git_workspace\my_git_project\TestProject\src\lib\commons-pool2-2.7.0.jar;D:\git_workspace\my_git_project\TestProject\src\lib\slf4j-log4j12-1.7.0.jar;D:\soft_install\IntelliJ IDEA 2019.3.1\lib\idea_rt.jar" com.fengcase3.utils.feng.XMLUtil2
+Connected to the target VM, address: '127.0.0.1:52253', transport: 'socket'
+[Fatal Error] workflow_2_8_abs.dtd:1:2: 文档类型声明包含或指向的标记声明必须格式正确。
+Exception in thread "main" java.lang.RuntimeException: 文档类型声明包含或指向的标记声明必须格式正确。
+	at com.fengcase3.utils.feng.XMLUtil2.getRootElement(XMLUtil2.java:74)
+	at com.fengcase3.utils.feng.XMLUtil2.main(XMLUtil2.java:432)
+Caused by: java.lang.RuntimeException: 文档类型声明包含或指向的标记声明必须格式正确。
+	at com.fengcase3.utils.feng.XMLUtil2.getRootElement(XMLUtil2.java:100)
+	at com.fengcase3.utils.feng.XMLUtil2.getRootElement(XMLUtil2.java:72)
+	... 1 more
+Caused by: org.xml.sax.SAXParseExceptionpublicId: -//Apexsoft LiveBos//DTD Workflow 2.8//EN; systemId: http://www.livebos.com/workflow/workflow_2_8_abs.dtd; lineNumber: 1; columnNumber: 2; 文档类型声明包含或指向的标记声明必须格式正确。
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:257)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:121)
+	at com.fengcase3.utils.feng.XMLUtil2.getRootElement(XMLUtil2.java:97)
+	... 2 more
+Disconnected from the target VM, address: '127.0.0.1:52253', transport: 'socket'
+
+Process finished with exit code 1
+
+////////////////////////////////////////
+
+[Fatal Error] workflow_2_8_abs.dtd:1:2: The markup declarations contained or pointed to by the document type declaration must be well-formed.
+
+//////////////////////////////////
+
+https://www.livebos.com/workflow/workflow_2_8_abs.dtd
+
+HTTP Status 404 – 未找到
+
+Type Status Report
+
+消息 /workflow/workflow_2_8_abs.dtd
+
+描述 源服务器未能找到目标资源的表示或者是不愿公开一个已经存在的资源表示

@@ -1,0 +1,6 @@
+--实现符号分开的一列数据，列转行：
+--英文逗号隔开：
+select REGEXP_SUBSTR('738,1345,1000', '[^,]+', 1, rownum)
+  from dual
+connect by rownum <= length('738,1345,1000') -
+           LENGTH(REPLACE('738,1345,1000', ',', '')) + 1;

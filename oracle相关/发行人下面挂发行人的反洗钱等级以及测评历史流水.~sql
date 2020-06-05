@@ -1,0 +1,10 @@
+----------
+select * from T_GDSY_FXRCPXX;
+----------
+select * from T_GDSY_FXRCPLSXX;
+----------
+select * from t_gdsy_khcpxx;
+----------
+select * from t_gdsy_khcplsxx;
+----------
+select * from t_gdsy_zqxsxx;

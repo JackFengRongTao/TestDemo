@@ -20,79 +20,92 @@
 
 
          }
+         #myTable{
+               font-size: 18px;
+         }
+         #myTable2{
+              font-size: 22px;
+          }
+         .myTable2TrClass{
+             height: 80px;
+             font-size: 22px;
+         }
+         .myTable2TrClass  td{
+             width:130px;
+         }
     </style>
 </head>
 <body style="text-align:center">
     <div class="weizhiClass">
-        <h2>设备固定信息</h2>
+        <h1>设备详细信息</h1>
         <table style="border: 1px solid gray;border-collapse:collapse;" align="center"  width="500px" id="myTable" >
             <tr >
                 <th class="thLab"  colspan="2">设备标识</th>
-                <td class="tdLab">CMJ10001</td>
+                <td class="tdLab" align="center" >CMJ10001</td>
             </tr>
             <tr>
                 <th class="thLab"  colspan="2">设备名称</th>
-                <td class="tdLab">采煤机</td>
+                <td class="tdLab" align="center" >采煤机</td>
             </tr>
             <tr>
                 <th class="thLab"  colspan="2">设备型号</th>
-                <td   class="tdLab">MXA-300</td>
+                <td   class="tdLab" align="center" >MXA-300</td>
             </tr>
             <tr>
                 <th class="thLab"  colspan="2">生产能力（吨/时）</th>
-                <td class="tdLab">708</td>
+                <td class="tdLab" align="center" >708</td>
             </tr>
             <tr>
                 <th class="thLab"  colspan="2">采高范围（米）</th>
-                <td class="tdLab">2~3.5</td>
+                <td class="tdLab" align="center" >2~3.5</td>
             </tr>
             <tr>
                 <th class="thLab"  colspan="2">截深（米）</th>
-                <td class="tdLab">0.625</td>
+                <td class="tdLab" align="center" >0.625</td>
             </tr>
             <tr>
                 <th class="thLab"  colspan="2">适应煤层倾角（度）</th>
-                <td class="tdLab">0~40</td>
+                <td class="tdLab" align="center" >0~40</td>
             </tr>
             <tr>
                 <th class="thLab" rowspan="6" >电动机</th>
-                <th class="thLab"  >型号</th>
-                <td class="tdLab">DMB-3005</td>
+                <th class="thLab"  align="center" >型号</th>
+                <td class="tdLab" align="center" >DMB-3005</td>
             </tr>
             <tr>
                 <th class="thLab" >输出功率（千瓦）</th>
-                <td class="tdLab">300</td>
+                <td class="tdLab" align="center" >300</td>
             </tr>
             <tr>
                 <th class="thLab" >额定电压（伏）</th>
-                <td class="tdLab">1140</td>
+                <td class="tdLab" align="center" >1140</td>
             </tr>
             <tr>
                 <th class="thLab" >额定电流（安培）</th>
-                <td class="tdLab">188</td>
+                <td class="tdLab" align="center" >188</td>
             </tr>
             <tr>
                 <th class="thLab" >转速（圈/分）</th>
-                <td class="tdLab" >1440</td>
+                <td class="tdLab" align="center" >1440</td>
             </tr>
             <tr>
                 <th class="thLab" >冷却方式</th>
-                <td class="tdLab">水冷</td>
+                <td class="tdLab" align="center" >水冷</td>
             </tr>
             <tr>
                 <th class="thLab"  colspan="2">牵引方式</th>
-                <td class="tdLab">无链</td>
+                <td class="tdLab" align="center" >无链</td>
             </tr>
             <tr>
                 <th class="thLab"  colspan="2">最大牵引力（千牛）</th>
-                <td class="tdLab">400</td>
+                <td class="tdLab" align="center" >400</td>
             </tr>
           </table>
     </div>
     <div  class="weizhiClass">
-        <h2>设备运行信息</h2>
-        <table style="border: 1px solid gray;border-collapse:collapse;" align="center" width="800px" id="myTable2">
-            <tr >
+        <h1>设备运行信息</h1>
+        <table style="border: 1px solid gray;border-collapse:collapse;" align="center" width="780px" id="myTable2">
+            <tr class="myTable2HeadTrClass">
                 <td class="tdLab myTable2Class" align="center">设备状态</td>
                 <td class="tdLab myTable2Class" align="center">故障现象</td>
                 <td class="tdLab myTable2Class" align="center">故障原因</td>
@@ -100,29 +113,29 @@
                 <td class="tdLab myTable2Class" align="center">维修时间</td>
                 <td class="tdLab myTable2Class" align="center">维修人员</td>
             </tr>
-            <tr>
-                <td class="tdLab">故障</td>
-                <td class="tdLab">电机通电不转</td>
-                <td class="tdLab">电缆芯线与接线柱连接不好</td>
-                <td class="tdLab">重新连线</td>
-                <td class="tdLab">2020-03-18</td>
-                <td class="tdLab">张某</td>
+            <tr class="myTable2TrClass">
+                <td class="tdLab" align="center">故障</td>
+                <td class="tdLab" align="center">电机通电不转</td>
+                <td class="tdLab" align="center">电缆芯线与接线柱连接不好</td>
+                <td class="tdLab" align="center">重新连线</td>
+                <td class="tdLab" align="center">2020-02-10</td>
+                <td class="tdLab" align="center">张某</td>
             </tr>
-            <tr>
-                <td class="tdLab">故障</td>
-                <td class="tdLab">液压制动器过于发热，温度过高</td>
-                <td class="tdLab">内外摩擦片变形</td>
-                <td class="tdLab">更换摩擦片</td>
-                <td class="tdLab">2020-03-18</td>
-                <td class="tdLab">王某</td>
+            <tr class="myTable2TrClass">
+                <td class="tdLab" align="center">故障</td>
+                <td class="tdLab" align="center">液压制动器过于发热，温度过高</td>
+                <td class="tdLab" align="center">内外摩擦片变形</td>
+                <td class="tdLab" align="center">更换摩擦片</td>
+                <td class="tdLab" align="center">2020-03-18</td>
+                <td class="tdLab" align="center">王某</td>
             </tr>
-            <tr>
-                <td class="tdLab">故障</td>
-                <td class="tdLab">摇臂不能调节到任意的高度</td>
-                <td class="tdLab">过滤器堵塞严重，吸油不畅</td>
-                <td class="tdLab">清理过滤器</td>
-                <td class="tdLab">2020-03-18</td>
-                <td class="tdLab">刘某</td>
+            <tr class="myTable2TrClass">
+                <td class="tdLab" align="center">故障</td>
+                <td class="tdLab" align="center">摇臂不能调节到任意的高度</td>
+                <td class="tdLab" align="center">过滤器堵塞严重，吸油不畅</td>
+                <td class="tdLab" align="center">清理过滤器</td>
+                <td class="tdLab" align="center">2020-04-11</td>
+                <td class="tdLab" align="center">刘某</td>
             </tr>
         </table>
 

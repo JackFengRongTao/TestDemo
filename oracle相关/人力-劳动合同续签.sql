@@ -1,0 +1,65 @@
+select * from lc_hr_ldhtxq;
+
+create table lc_hr_ldhtxq_bak as select * from lc_hr_ldhtxq; 
+
+select * from lc_hr_ldhtxq_bak;
+
+delete from lc_hr_ldhtxq;
+
+
+select * from zhyy_data.hr_evw_employee;
+
+select * from zhyy_data.hr_evw_employee a  where a.empstatus = 1 and a.badge = '04087';
+
+select a.empstatus from zhyy_data.hr_evw_employee a  group by a.empstatus;
+
+select * from zhyy_data.hr_evw_employee a  where a.empstatus = 3; 
+
+select a.badge,
+       a.name,
+       a.empstatus,
+       a.joindate,
+       a.workbegindate,
+       a.jobbegindate,
+       a.conbegindate,
+       a.conenddate,
+       a.leavedate,
+       a.birthday,
+       a.pbegindate,
+       a.penddate,
+       a.cyear,
+       a.workyears,
+       a.jyear
+  from zhyy_data.hr_evw_employee a where a.empstatus = 1 and a.conenddate is not null;
+  
+--需要劳动合同续签的人员
+  select
+       a.name as XM,
+       a.badge as GH,           
+       a.gender as XB,
+       a.birthday as CSRQ,    
+       a.certno as ZJBH,
+       b.compabbr as GS,
+       c.depabbr as BM,
+       a.office_phone as DH,       
+       a.mobile as SJ,
+       a.email as YX,  
+       a.conbegindate HTKSRQ,
+       a.conenddate HTJSRQ,
+       d.jobabbr as GW
+  from zhyy_data.hr_evw_employee a,zhyy_data.hr_ocompany b,zhyy_data.hr_odepartment c,zhyy_data.hr_ojob d   
+  where 
+   a.compid = b.compid and a.depid = c.depid and a.jobid = d.jobid
+ and a.empstatus = 1 and a.conenddate is not null 
+  and a.conenddate <= sysdate+90 and a.conenddate >= sysdate;
+
+
+--现合同开始日期
+select to_number(to_char(a.conbegindate,'yyyymmdd')) as HTKSRQ
+  from zhyy_data.hr_evw_employee a
+  where  a.badge = '04087';
+  
+--现合同结束日期
+  select to_number(to_char(a.conenddate+1,'yyyymmdd')) as HTJSRQ
+  from zhyy_data.hr_evw_employee a
+  where  a.badge = '04087';

@@ -1,0 +1,211 @@
+select * from lc_HR_YGTXSQ;
+
+create table lc_HR_YGTXSQ_bak  as select * from lc_HR_YGTXSQ;
+
+select * from  lc_HR_YGTXSQ_bak;
+
+delete from lc_HR_YGTXSQ;
+
+
+select * from T_HR_TXRYXX;
+
+
+
+select * from lbOrganization order by id asc;
+
+select * from lborganization where orgcode = '9017';
+
+select * from lborganization a where name like'%运营管理%';
+
+
+select * from lbrole a  order by id asc;
+
+select * from lbrole where rolecode = 'GL03';
+
+select * from lbrole where name like'%运营管理部%';
+
+
+
+
+
+select * from tuser a where a.name like'%吴李%';
+
+
+select * from tuser a,lbmember b,lborganization c,lbrole d  where a.id = b.userid and b.orgid = c.id and b.roleid = d.id  and a.userid = '04087';
+
+select * from tuser a,lbmember b,lborganization c,lbrole d  where a.id = b.userid and b.orgid = c.id and b.roleid = d.id  and a.userid = '04087';
+
+select * from os_wfentry a order by id desc;
+
+select * from lc_HR_YGTXSQ a order by id desc  ;
+
+select * from zhyy_data.hr_evw_employee;
+
+select * from zhyy_data.hr_odepartment;
+
+select * from zhyy_data.hr_ocompany;
+
+select * from zhyy_data.hr_ojob a ;
+
+
+
+----总部
+--本人
+select * from tUser where  tUser.Userid = '04087'
+
+
+
+--行政助理
+tUser.ID in
+         (select userid
+            from lbmember t
+           where t.roleid = (select id from lbrole where rolecode = 'GL03')
+             and func_get_yjbm(t.orgid) =
+                 (select id from lborganization where orgcode = {0}))
+
+
+--部门负责人
+ instr(',' || FUNC_GET_BMFZR({0}) || ',', ',' || id || ',') > 0
+
+--人力资源部行政助理王婷
+  select *
+    from tUser
+   WHERE tUser.ID in
+         (select userid
+            from lbmember t
+           where t.roleid = (select id from lbrole where rolecode = 'GL03')
+             and func_get_yjbm(t.orgid) =
+                 (select id from lborganization where orgcode = '9017')) and tUser.Userid = '00948';
+
+--招聘培训团队负责人（金越丰）
+ instr(','||FUNC_GET_EJBMFZR(0,null,{0})||',',','||id||',') > 0;
+ 
+--分管领导
+ exists(select leader from lborganization where id = FUNC_GET_YJBM({0}) and leader = tUser.ID);
+ 
+--董事长
+ id in (select userid from lbmember where roleid = (select id from lbrole where rolecode='DSZ'));
+ 
+ 
+----查询快要退休人员数据集
+
+select * from zhyy_data.hr_evw_employee a where a.empstatus = 1;
+
+select * from tuser a where a.name like'%吴李%';
+
+select * from zhyy_data.hr_evw_employee a where a.empstatus = 1 and a.badge = '00252';
+
+select name,gender from zhyy_data.hr_evw_employee a where a.empstatus = 1  and a.gender = 1;
+
+--退休日期，生日天；生日月+上个月两个月，男：60岁，女：55岁，开始推送流程； 
+----男、女：
+select a.name as XM,
+       a.badge as GH,           
+       a.gender as XB,
+       a.birthday as CSRQ,
+       add_months(a.birthday, 12 * 60) as TXRQ,
+       a.certno as ZJBH,   
+       a.office_phone as DH,       
+       a.mobile as SJ,
+       a.email as YX,
+       a.age as NL,
+       b.compabbr as GS,
+       c.depabbr as BM,  
+       d.jobabbr as GW     
+  from zhyy_data.hr_evw_employee a,zhyy_data.hr_ocompany b,zhyy_data.hr_odepartment c,zhyy_data.hr_ojob d
+ where a.empstatus = 1
+   and a.gender = 1
+   and a.compid = b.compid and a.depid = c.depid and a.jobid = d.jobid
+   and to_char(add_months(a.birthday, 12 * 60),'yyyy') = to_char(sysdate,'yyyy')
+   and to_number(to_char(add_months(a.birthday, 12 * 60),'yyyymm')) >=  to_number(to_char(add_months(sysdate,-1),'yyyymm'))
+   and to_number(to_char(add_months(a.birthday, 12 * 60),'yyyymm')) <=  to_number(to_char(sysdate,'yyyymm'))
+union 
+select a.name as XM,
+       a.badge as GH,           
+       a.gender as XB,
+       a.birthday as CSRQ,
+       add_months(a.birthday, 12 * 55) as TXRQ,
+       a.certno as ZJBH,
+       a.office_phone as DH,       
+       a.mobile as SJ,
+       a.email as YX,
+       a.age as NL,
+       b.compabbr as GS,
+       c.depabbr as BM,  
+       d.jobabbr as GW     
+  from zhyy_data.hr_evw_employee a,zhyy_data.hr_ocompany b,zhyy_data.hr_odepartment c,zhyy_data.hr_ojob d
+ where a.empstatus = 1
+   and a.gender = 2
+   and a.compid = b.compid and a.depid = c.depid and a.jobid = d.jobid
+   and to_char(add_months(a.birthday, 12 * 55),'yyyy') = to_char(sysdate,'yyyy')
+   and to_number(to_char(add_months(a.birthday, 12 * 55),'yyyymm')) >=  to_number(to_char(add_months(sysdate,-1),'yyyymm'))
+   and to_number(to_char(add_months(a.birthday, 12 * 55),'yyyymm')) <=  to_number(to_char(sysdate,'yyyymm'))
+
+
+select add_months(sysdate,3) from dual;
+
+
+select add_years(sysdate,3) from dual;
+
+--性别：
+select a.gender as XB
+  from zhyy_data.hr_evw_employee a
+ where a.badge = '04087';
+
+--退休日期：
+select (case
+         when a.gender = 1 then   to_number(to_char(add_months(a.birthday, 12 * 60),'yyyymmdd')) 
+         when a.gender = 2 then   to_number(to_char(add_months(a.birthday, 12 * 55),'yyyymmdd'))
+       end )  as TXRQ
+  from zhyy_data.hr_evw_employee a
+ where a.badge = '04087';
+ 
+--出生日期
+ select  to_number(to_char(a.birthday,'yyyymmdd')) as CSRQ
+  from zhyy_data.hr_evw_employee a
+ where a.badge = '04087'; 
+--证件编号
+ select  a.certno as ZJBH
+  from zhyy_data.hr_evw_employee a
+ where a.badge = '04087';
+--公司
+ select  b.compabbr as GS
+  from zhyy_data.hr_evw_employee a,zhyy_data.hr_ocompany b
+ where a.compid = b.compid  and  a.badge = '04087';
+ 
+--部门
+ select  b.depabbr as BM
+  from zhyy_data.hr_evw_employee a,zhyy_data.hr_odepartment b
+ where a.depid = b.depid and a.badge = '04087';
+ 
+--部门_综合运营
+
+select a.orgid from tuser a ,lborganization b where a.userid ='04087' and  a.orgid = b.id ;
+
+ 
+ 
+--岗位
+ select  b.jobabbr as GW
+  from zhyy_data.hr_evw_employee a,zhyy_data.hr_ojob b
+  where a.jobid = b.jobid and  a.badge = '04087';
+  
+--电话
+ select  a.office_phone as DH
+  from zhyy_data.hr_evw_employee a
+  where  a.badge = '04087';
+  
+--手机
+  select a.mobile as SJ
+  from zhyy_data.hr_evw_employee a
+  where  a.badge = '04087';
+  
+--邮箱
+ 
+select a.email as YX
+  from zhyy_data.hr_evw_employee a
+  where  a.badge = '04087';
+ 
+--年龄
+select a.age as NL
+  from zhyy_data.hr_evw_employee a
+  where  a.badge = '04087';
