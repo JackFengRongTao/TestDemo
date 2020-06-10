@@ -2,56 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="535853a4-567b-483b-a4c4-0973efbef433" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/fengcase3/utils/SetUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/fengcase3/utils/TryCatchFinallyTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/fengcase3/utils/feng/MapToXml.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/fengcase3/utils/feng/TestInstanceof.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/fengcase3/utils/feng/ThreadTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/fengcase3/utils/feng/ThreadTest2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/fengcase3/utils/feng/ThreadTest3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/fengcase3/utils/feng/XMLUtil2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/fengcase3/utils/feng/XmlToMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/fengcase3/utils/feng/XmlUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/fengcase3/utils/feng/dataStructure/SequenceListTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/fengcase3/utils/feng/dataStructure/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/fengcase3/utils/feng/test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/html/RegularExpression.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FengCaseDemo/TestDemo2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FengCaseDemo/com/EnumTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FengCaseDemo/com/EnumTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FengCaseDemo/com/Status.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FengCaseDemo/com/Status.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FengCaseDemo/com/fengcase2/javacase/A0024UseStream.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FengCaseDemo/com/fengcase2/javacase/A0024UseStream.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FengCaseDemo/com/fengtest/AsyncNotifyThread.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FengCaseDemo/com/fengtest/AsyncNotifyThreadDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FengCaseDemo/com/fengtest/ExceptionOutTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FengCaseDemo/com/fengtest/InitConfigCheckThread.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FengCaseDemo/com/fengtest/RedisUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FengCaseDemo/com/fengtest/StringContainsTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FengCaseDemo/com/fengtest/TestDemo1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FengCaseDemo/com/fengtest/TestDemo3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FengCaseDemo/com/fengtest/TestDemo4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FengCaseDemo/com/fengtest/Testjava.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FengCaseDemo/com/fengtest/ThrowNewExceptionDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FengCaseDemo/com/fengtest/ThrowNewExceptionTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FengCaseDemo/html/cmjxx.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FengCaseDemo/html/cmjxx.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/EnumTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EnumTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/fengcase2/javacase/A0024UseStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fengcase2/javacase/A0024UseStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/fengtest/ExceptionOutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fengcase3/utils/ExceptionOutTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/fengtest/RedisUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fengcase3/utils/RedisUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/fengtest/StringContainsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fengcase3/utils/StringContainsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/fengtest/TestDemo1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fengcase3/utils/TestDemo1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/fengtest/TestDemo2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fengcase3/utils/TestDemo2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/fengtest/TestDemo3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fengcase3/utils/TestDemo3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/fengtest/TestDemo4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fengcase3/utils/TestDemo4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/fengtest/Testjava.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fengcase3/utils/Testjava.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/fengtest/ThrowNewExceptionDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fengcase3/utils/ThrowNewExceptionDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/fengtest/ThrowNewExceptionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fengcase3/utils/ThrowNewExceptionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/cmjxx.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/cmjxx.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../oracle相关/合并沟通审核人意见展示问题.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../oracle相关/合并沟通审核人意见展示问题.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../oracle相关/合并沟通审核人意见展示问题.~sql" beforeDir="false" afterPath="$PROJECT_DIR$/../oracle相关/合并沟通审核人意见展示问题.~sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../oracle相关/项目底稿档案袋-与流程关联上传文件.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../oracle相关/项目底稿档案袋-与流程关联上传文件.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../oracle相关/项目底稿档案袋-与流程关联上传文件.~sql" beforeDir="false" afterPath="$PROJECT_DIR$/../oracle相关/项目底稿档案袋-与流程关联上传文件.~sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/fengcase3/utils/feng/XMLUtil2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fengcase3/utils/XMLUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../oracle相关/人力-劳动合同续签V1.1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../oracle相关/人力-劳动合同续签V1.1.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../oracle相关/人力-劳动合同续签V1.1.~sql" beforeDir="false" afterPath="$PROJECT_DIR$/../oracle相关/人力-劳动合同续签V1.1.~sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -221,13 +175,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="XMLUtil2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.fengcase3.utils.feng.XMLUtil2" />
+    <configuration name="XMLUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.fengcase3.utils.XMLUtil" />
       <module name="FengCaseDemo" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.fengcase3.utils.feng.*" />
+          <option name="PATTERN" value="com.fengcase3.utils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -416,11 +370,25 @@
       <workItem from="1590972027182" duration="5260000" />
       <workItem from="1591150458800" duration="3030000" />
       <workItem from="1591231511473" duration="18277000" />
+      <workItem from="1591343364022" duration="1416000" />
+      <workItem from="1591671112585" duration="720000" />
     </task>
+    <task id="LOCAL-00001" summary="提交新增&amp;修改">
+      <created>1591343477647</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1591343477647</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="提交新增&amp;修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="提交新增&amp;修改" />
   </component>
   <component name="WindowStateProjectService">
     <state x="574" y="121" key="#com.intellij.ide.util.MemberChooser" timestamp="1586333892090">

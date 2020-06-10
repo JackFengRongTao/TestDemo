@@ -115,3 +115,36 @@ select a.age  from zhyy_data.hr_evw_employee a where a.badge = '03583'
 
 
 
+--
+  select
+       a.name as XM,
+       a.badge as GH,           
+       a.gender as XB,
+       a.birthday as CSRQ,    
+       a.certno as ZJBH,
+       a.age as NL,
+       a.joindate as RGSRQ,              
+       a.office_phone as DH,       
+       a.mobile as SJ,
+       a.email as YX,  
+       a.conbegindate HTKSRQ,
+       a.conenddate HTJSRQ,
+       b.compabbr as GS,
+       d.jobabbr as GW,
+       e.new_conbegindate as   XHTKSRQ,
+       E.NEW_CONENDDATE as XHTJSRQ,
+       (case
+         when e.new_conterm is null and e.new_conenddate is null then
+          3
+         when e.new_conterm is not null and e.new_conenddate is not null and
+              e.new_conterm / 12 = 3 then
+          1
+         when e.new_conterm is not null and e.new_conenddate is not null and
+              e.new_conterm / 12 = 5 then
+          2
+       end) as XQQX
+  from zhyy_data.hr_evw_employee a,zhyy_data.hr_ocompany b,zhyy_data.hr_odepartment c,zhyy_data.hr_ojob d,zhyy_data.hr_econtract_register e,lborganization   
+  where 
+   a.compid = b.compid and a.depid = c.depid and a.jobid = d.jobid and a.badge = e.badge
+ and a.empstatus = 1 and a.conenddate is not null 
+  and a.conenddate <= sysdate+90 and a.conenddate >= sysdate;

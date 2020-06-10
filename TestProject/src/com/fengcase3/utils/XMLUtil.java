@@ -1,4 +1,4 @@
-package com.fengcase3.utils.feng;
+package com.fengcase3.utils;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -20,9 +20,9 @@ import java.util.Vector;
  * @author chenxy
  *
  */
-public final class XMLUtil2 {
+public final class XMLUtil {
 
-	private XMLUtil2(){
+	private XMLUtil(){
 	}
 	
 	/**
