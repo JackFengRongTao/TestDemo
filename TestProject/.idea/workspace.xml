@@ -2,10 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="535853a4-567b-483b-a4c4-0973efbef433" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/fengcase3/utils/IOMarkResetTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/fengcase3/utils/StringIsOrNotEqual.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/fengcase3/utils/TestGsonUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/fengcase3/utils/feng/XMLUtil2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fengcase3/utils/XMLUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../oracle相关/人力-劳动合同续签V1.1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../oracle相关/人力-劳动合同续签V1.1.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FengCaseDemo/META-INF/FengCaseDemo.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FengCaseDemo/com/fengcase3/utils/feng/XMLUtil2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/fengcase/GeneralConfigUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/fengcase/SysInfluxDBFilter.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../oracle相关/人力-劳动合同续签V1.1.~sql" beforeDir="false" afterPath="$PROJECT_DIR$/../oracle相关/人力-劳动合同续签V1.1.~sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../oracle相关/人力-劳动合同续签V1.2.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../oracle相关/人力-劳动合同续签V1.2.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../oracle相关/人力-劳动合同续签V1.2.~sql" beforeDir="false" afterPath="$PROJECT_DIR$/../oracle相关/人力-劳动合同续签V1.2.~sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../oracle相关/解锁.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../oracle相关/解锁.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../oracle相关/解锁.~sql" beforeDir="false" afterPath="$PROJECT_DIR$/../oracle相关/解锁.~sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +92,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1579253704497" />
     <property name="create.test.in.the.same.root" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="D:/dongwuzhengquan/固收管理/dwzq_gdsy/dwzq_gdsy" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -93,26 +102,26 @@
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\git_workspace\my_git_project\TestProject\src\html" />
-      <recent name="D:\git_workspace\my_git_project\TestProject\src\com\fengtest" />
-      <recent name="D:\03.平常测试\src\lib" />
-      <recent name="D:\03.平常测试\src\com\fengtest" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\git_workspace\my_git_project\TestProject\src\lib" />
+      <recent name="D:\03.平常测试\out\production\FengCaseDemo\com\fengcase2" />
       <recent name="D:\03.平常测试\out\production\FengCaseDemo\com" />
+      <recent name="D:\03.平常测试\src\com\fengcase\part5" />
+      <recent name="D:\03.平常测试\src\com\fengcase" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.fengcase3.utils.feng" />
       <recent name="" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\03.平常测试\out\production\FengCaseDemo\com\fengcase2" />
-      <recent name="D:\03.平常测试\out\production\FengCaseDemo\com" />
-      <recent name="D:\03.平常测试\src\com\fengcase\part5" />
-      <recent name="D:\03.平常测试\src\com\fengcase" />
-      <recent name="D:\03.平常测试\out\production\FengCaseDemo\com\fengcase\part5" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\git_workspace\my_git_project\TestProject\out\production\FengCaseDemo\com\fengcase" />
+      <recent name="D:\git_workspace\my_git_project\TestProject\src\com\fengcase" />
+      <recent name="D:\git_workspace\my_git_project\TestProject\src\com\fengcase\part4\aqs" />
+      <recent name="D:\git_workspace\my_git_project\TestProject\src\html" />
+      <recent name="D:\git_workspace\my_git_project\TestProject\src\lib" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.XMLUtil2">
+  <component name="RunManager" selected="Application.IOMarkResetTest">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -133,22 +142,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EnumTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.EnumTest" />
-      <module name="FengCaseDemo" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SetUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.fengcase3.utils.SetUtils" />
+    <configuration name="IOMarkResetTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.fengcase3.utils.IOMarkResetTest" />
       <module name="FengCaseDemo" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -161,8 +156,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TryCatchFinallyTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.fengcase3.utils.TryCatchFinallyTest" />
+    <configuration name="StringIsOrNotEqual" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.fengcase3.utils.StringIsOrNotEqual" />
       <module name="FengCaseDemo" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -175,8 +170,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="XMLUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.fengcase3.utils.XMLUtil" />
+    <configuration name="StringUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.fengcase3.utils.StringUtil" />
+      <module name="FengCaseDemo" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fengcase3.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestGsonUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.fengcase3.utils.TestGsonUtil" />
       <module name="FengCaseDemo" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -222,11 +231,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.XMLUtil2" />
-        <item itemvalue="Application.SetUtils" />
+        <item itemvalue="Application.IOMarkResetTest" />
+        <item itemvalue="Application.StringUtil" />
+        <item itemvalue="Application.StringIsOrNotEqual" />
+        <item itemvalue="Application.TestGsonUtil" />
         <item itemvalue="Application.A0024UseStream" />
-        <item itemvalue="Application.TryCatchFinallyTest" />
-        <item itemvalue="Application.EnumTest" />
       </list>
     </recent_temporary>
   </component>
@@ -372,6 +381,32 @@
       <workItem from="1591231511473" duration="18277000" />
       <workItem from="1591343364022" duration="1416000" />
       <workItem from="1591671112585" duration="720000" />
+      <workItem from="1592206946858" duration="4441000" />
+      <workItem from="1592290582210" duration="2619000" />
+      <workItem from="1593742121128" duration="3590000" />
+      <workItem from="1593826202112" duration="608000" />
+      <workItem from="1593995078771" duration="4774000" />
+      <workItem from="1594023886458" duration="1676000" />
+      <workItem from="1594082959108" duration="2791000" />
+      <workItem from="1594169428822" duration="9379000" />
+      <workItem from="1594259542528" duration="1193000" />
+      <workItem from="1594343549123" duration="795000" />
+      <workItem from="1594438407356" duration="652000" />
+      <workItem from="1594602690634" duration="3944000" />
+      <workItem from="1594807861038" duration="651000" />
+      <workItem from="1598584701668" duration="1695000" />
+      <workItem from="1598833404932" duration="1172000" />
+      <workItem from="1599446602245" duration="794000" />
+      <workItem from="1599525502873" duration="1255000" />
+      <workItem from="1599611726806" duration="1051000" />
+      <workItem from="1599697922568" duration="1159000" />
+      <workItem from="1605081884564" duration="1956000" />
+      <workItem from="1605140794108" duration="1171000" />
+      <workItem from="1605227138163" duration="1195000" />
+      <workItem from="1605274601607" duration="1387000" />
+      <workItem from="1605336481994" duration="1150000" />
+      <workItem from="1605353837577" duration="603000" />
+      <workItem from="1605486844466" duration="2237000" />
     </task>
     <task id="LOCAL-00001" summary="提交新增&amp;修改">
       <created>1591343477647</created>
@@ -391,98 +426,42 @@
     <option name="LAST_COMMIT_MESSAGE" value="提交新增&amp;修改" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="574" y="121" key="#com.intellij.ide.util.MemberChooser" timestamp="1586333892090">
+    <state x="538" y="46" width="649" height="654" key="FileChooserDialogImpl" timestamp="1605489262353">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="121" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1586333892090" />
-    <state x="553" y="302" width="429" height="225" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1591232909582">
+    <state x="538" y="46" width="649" height="654" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1605489262353" />
+    <state width="1537" height="210" key="GridCell.Tab.0.bottom" timestamp="1599446777538">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="553" y="302" width="429" height="225" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1591232909582" />
-    <state x="499" y="171" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog" timestamp="1586413439249">
+    <state width="1537" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1599446777538" />
+    <state width="1537" height="210" key="GridCell.Tab.0.center" timestamp="1599446777538">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="499" y="171" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.0.1536.824@0.0.1536.824" timestamp="1586413439249" />
-    <state x="926" y="122" key="#xdebugger.evaluate" timestamp="1591251078476">
+    <state width="1537" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1599446777538" />
+    <state width="1537" height="210" key="GridCell.Tab.0.left" timestamp="1599446777538">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="926" y="122" key="#xdebugger.evaluate/0.0.1536.824@0.0.1536.824" timestamp="1591251078476" />
-    <state x="101" y="10" key="CommitChangelistDialog2" timestamp="1591343472918">
+    <state width="1537" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1599446777538" />
+    <state width="1537" height="210" key="GridCell.Tab.0.right" timestamp="1599446777538">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="101" y="10" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1591343472918" />
-    <state width="416" height="438" key="DebuggerActiveHint" timestamp="1591254981805">
+    <state width="1537" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1599446777538" />
+    <state width="1537" height="389" key="GridCell.Tab.1.bottom" timestamp="1599446761165">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="416" height="438" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1591254981805" />
-    <state x="422" y="82" width="649" height="558" key="FileChooserDialogImpl" timestamp="1591173126608">
+    <state width="1537" height="389" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1599446761165" />
+    <state width="1537" height="389" key="GridCell.Tab.1.center" timestamp="1599446761165">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="422" y="82" width="649" height="558" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1591173126608" />
-    <state width="1493" height="478" key="GridCell.Tab.0.bottom" timestamp="1591263479368">
+    <state width="1537" height="389" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1599446761165" />
+    <state width="1537" height="389" key="GridCell.Tab.1.left" timestamp="1599446761165">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="478" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1591263479368" />
-    <state width="1493" height="478" key="GridCell.Tab.0.center" timestamp="1591263479368">
+    <state width="1537" height="389" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1599446761165" />
+    <state width="1537" height="389" key="GridCell.Tab.1.right" timestamp="1599446761165">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="478" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1591263479368" />
-    <state width="1493" height="478" key="GridCell.Tab.0.left" timestamp="1591263479368">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="478" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1591263479368" />
-    <state width="1493" height="478" key="GridCell.Tab.0.right" timestamp="1591263479368">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="478" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1591263479368" />
-    <state width="1493" height="377" key="GridCell.Tab.1.bottom" timestamp="1591263479368">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="377" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1591263479368" />
-    <state width="1493" height="377" key="GridCell.Tab.1.center" timestamp="1591263479368">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="377" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1591263479368" />
-    <state width="1493" height="377" key="GridCell.Tab.1.left" timestamp="1591263479368">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="377" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1591263479368" />
-    <state width="1493" height="377" key="GridCell.Tab.1.right" timestamp="1591263479368">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="377" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1591263479368" />
-    <state x="249" y="0" key="SettingsEditor" timestamp="1589418526884">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1589418526884" />
-    <state x="361" y="149" key="Vcs.Push.Dialog.v2" timestamp="1591343489759">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="361" y="149" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1591343489759" />
-    <state x="442" y="146" width="914" height="505" key="com.intellij.ide.util.TipDialog" timestamp="1590972702995">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="442" y="146" width="914" height="505" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1590972702995" />
-    <state x="564" y="331" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1591343368707">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="564" y="331" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1591343368707" />
-    <state x="349" y="68" key="editAsTableFormatDialogDimension" timestamp="1585616538305">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="349" y="68" key="editAsTableFormatDialogDimension/0.0.1536.824@0.0.1536.824" timestamp="1585616538305" />
-    <state x="457" y="167" width="621" height="490" key="find.popup" timestamp="1590851715014">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="457" y="167" width="621" height="490" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1590851715014" />
-    <state x="425" y="187" key="run.anything.popup" timestamp="1591256584726">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1591256584726" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1591257996208">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1591257996208" />
+    <state width="1537" height="389" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1599446761165" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -517,6 +496,11 @@
           <url>file://$PROJECT_DIR$/src/com/fengcase3/utils/SetUtils.java</url>
           <line>7</line>
           <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/fengcase3/utils/StringIsOrNotEqual.java</url>
+          <line>5</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

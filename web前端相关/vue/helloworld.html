@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+<script type="text/javascript" src="code/code/lib/vue.js"></script>
+<style>
+    .red{background-color: red;}
+    .yellow{background-color: yellow;}
+    .a{
+
+    }
+    .b{
+
+    }
+    .c{
+
+    }
+</style>
+</head>
+<body>
+   <div id="box">
+        {{ 10+20 }} <br/>
+        {{ 1==2?'yes':'no'}}  <br/>
+        {{ 1==2?"yes2":"no2"}}<br/>      
+        <p>{{myname}}</p>  
+        <!--指令-->
+        <p v-html="fmail"></p>
+        <div v-show="isshow">显示或者隐藏</div>
+        <div v-if="iscreated">创建或者删除</div>
+        <button @click="handleClick()">点击</button>
+        <div :class="isActive?'red':'yellow'">我是动态绑定class-三目写法</div>
+        <div :class="classobj">我是动态绑定class-对象写法</div>
+        <div :class="classarr">我是动态绑定class-数组写法</div>
+        <div :style="'background:'+(isActive?'red':'yellow')">我是动态绑定style-三目写法</div>
+        <div :style="styleobj">我是动态绑定style-对象写法</div>
+        <div :style="stylearr">我是动态绑定style-数组写法</div>  
+        <button @click="handleClick2()">点击</button>
+        <div v-if="iscreated2">if或者else-1111111111</div>
+        <div v-else>if或者else-222222222222</div> 
+        <ul>
+            <li v-for="data in datalist">
+                {{data}}
+            </li>
+        </ul>
+        <div v-if="witch===1">
+            1111
+        </div>     
+        <div v-else-if="witch===2">
+            2222
+        </div>  
+        <div v-else>
+            3333
+        </div>   
+        <ul>
+            <li v-for="(data2,index) of datalist2">
+                {{data2}}--{{index}}
+            </li>
+        </ul>
+        <ul>
+            <li v-for="(data,key) of obj">
+                {{data}}--{{key}}
+            </li>
+        </ul>
+        <hr>
+       
+        <input type="text" @input="handleInput()" v-model="mytext"/>    
+        <ul>
+            <li v-for="(data,index) of datalist3">
+                {{data}}
+            </li>
+        </ul>
+        <hr>
+        <ul @click="handleUlClick()">
+            <li @click.stop="handleLiClick($event)">
+                1
+            </li>
+            <li>
+                2
+            </li>
+            <li>
+                3
+            </li>
+        </ul> 
+        <a href="http://www.baidu.com"  @click.prevent="handleChangePage()">changePage</a>       
+    </div>
+   <script>        
+       var vm = new Vue({
+           el:"#box",
+           data:{
+                myname:"冯荣涛" ,//状态
+                fmail:"<span ><font size='30' color='red'>男</font></span>",
+                isshow:true,
+                iscreated:true,
+                isActive:true,
+                classobj:{
+                    a:true,
+                    b:true
+                },
+                classarr:["a","b"],
+                styleobj:{
+                    background:"red"                    
+                },
+                stylearr:[],
+                iscreated2:true,
+                datalist:["111","222","333"],
+                witch:1,
+                datalist2:["111","222","333"],    
+                obj:{
+                    name:"冯荣涛",
+                    age:100,
+                    loaction:"徐州"
+                },
+                mytext:"",  
+                datalist3:["111","222","333","4444","12","23"],
+                datalist3_bak:["111","222","333","4444","12","23"]         
+           },
+           methods:{
+               handleClick(){
+                   this.isActive = !this.isActive
+               },
+               handleClick2(){
+                   this.iscreated2 = !this.iscreated2
+               },
+               handleInput(){
+                //    console.log(this.mytext)
+                //filter 过滤
+                var newlist = this.datalist3_bak.filter(item=>item.indexOf(this.mytext)>-1);
+                // console.log(newlist);
+                this.datalist3 = newlist;
+               },
+               handleLiClick(ev){
+                    // ev.stopPropagation();                   
+                    console.log("li click");
+               },
+               handleUlClick(){                   
+                    console.log("ul click");
+               },
+               handleChangePage(){
+                console.log("handleChangePage");
+               },
+            }
+       })  
+       var arr = [1,2,3,4,5];
+       var newlist = arr.filter(item => {return item > 3});
+       console.log(newlist);
+   </script>
+</body>
+</html>

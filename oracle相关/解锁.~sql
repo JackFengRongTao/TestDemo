@@ -1,6 +1,6 @@
 --1.解锁
 
-oracle 如何解锁表
+
 
 --查询被锁的表
 
@@ -13,3 +13,5 @@ select b.username,b.sid,b.serial#,logon_time from v$locked_object a,v$session b 
 --杀掉对应进程即解锁
 
 alter system kill session '174,54957' --其中174是sid 54957是serial#
+
+

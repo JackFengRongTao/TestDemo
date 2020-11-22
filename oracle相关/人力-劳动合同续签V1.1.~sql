@@ -143,7 +143,7 @@ select a.age  from zhyy_data.hr_evw_employee a where a.badge = '03583'
               e.new_conterm / 12 = 5 then
           2
        end) as XQQX
-  from zhyy_data.hr_evw_employee a,zhyy_data.hr_ocompany b,zhyy_data.hr_odepartment c,zhyy_data.hr_ojob d,zhyy_data.hr_econtract_register e   
+  from zhyy_data.hr_evw_employee a,zhyy_data.hr_ocompany b,zhyy_data.hr_odepartment c,zhyy_data.hr_ojob d,zhyy_data.hr_econtract_register e,lborganization   
   where 
    a.compid = b.compid and a.depid = c.depid and a.jobid = d.jobid and a.badge = e.badge
  and a.empstatus = 1 and a.conenddate is not null 

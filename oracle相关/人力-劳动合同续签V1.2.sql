@@ -121,12 +121,11 @@ select b.id, b.name
          where to_char(a.fqsj, 'yyyymm') = to_char(sysdate, 'yyyymm')
          group by a.bm);
 
+
 select * from lc_HR_LDHTXQHBDB;
 
 
 select * from lc_hr_ldhtxq a order by a.id desc;
-
-
 
 
 //<%@ livebos language='javascript' %>
@@ -144,4 +143,6 @@ select to_number(to_char(sysdate,'dd')) from dual;
 
 update lc_hr_ldhtxq a set a.bmsftyxq = 1 where a.id = 215 and a.ygsftyxq = 1;
 
+
 select * from lc_hr_ldhtxq a order by a.id desc;
+
